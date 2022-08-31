@@ -1,0 +1,494 @@
+/*************************
+*** FUNDO
+*************************/
+.fundoOpacoMensagemErro,
+.fundoOpacoPadrao {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	opacity: .6;
+	display: none;
+	z-index: 98;
+}
+.fundoOpacoMensagemErro{ z-index: 99;}
+
+/*************************
+*** BOTAO FECHAR
+*************************/
+.botaoFecharPadrao,
+.cRequerimento #reqModUsuarioEnviadaArea .cancelarReqMod,
+.cRequerimento #reqModEnviadaArea .cancelarReqMod  {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	height: 14px;
+	cursor: pointer;
+}
+
+/*************************
+*** REGISTRO
+*************************/
+#caixaRegistro {
+	top: 20px;
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	border-radius: 6px;
+	position: fixed;
+	background-color: #fff;
+	display:none;
+	z-index: 100;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#caixaRegistro #imagemLadoRegistro {
+	min-height: 540px;
+	width: 20%;
+	float: left;
+}
+
+#caixaRegistro .imagenIconeRegistro{ 
+	float: left;
+	margin: 30px 0 16px 31%;
+}
+
+#caixaRegistro .imagenIconeRegistro img { height: 110px;}
+
+#caixaRegistro form { margin-top: 40px;}
+
+#caixaRegistro form input[type=text],
+#caixaRegistro form input[type=email],
+#caixaRegistro form input[type=password] {
+	width: 70%;
+	margin-bottom: 7px;
+	border: none;
+	border-bottom: 1px solid #DCDCDC;
+	height: 32px;
+	text-align: center;
+}
+
+#caixaRegistro form input[type=submit] {
+	height: 50px;
+	width: 70%;
+	margin: 25px 0 7px 0;
+}
+
+/*************************
+*** CRIAR COMUNIDADE
+*************************/
+.areaCriacaoComunidade #botaoCriarComunidade {
+	height: 3em;
+	width: 12em;
+	margin: 0 0 10px 5%;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade {
+	position: fixed;
+	width: 60%;
+	max-width: 768px;
+	margin-left: 20%;
+	min-height: 550px;
+	background-color: #fff;
+	border-radius: 6px;
+	top: 3%;
+	z-index: 100;
+	text-align: center;
+	display: none;
+	overflow: hidden;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade #imagemLateralCriarComunidade {
+	height: 551px;
+	width: 20%;
+	float: left;
+	overflow: hidden;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade #imagemLateralCriarComunidade img { height: 552px;}
+
+.areaCriacaoComunidade #caixaCriarCominidade .comunidadeIconeTopo { 
+	height: 110px;
+	float: left;
+	margin: 3% 10px 15px 17%;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade h3 { 
+	text-transform: capitalize;
+	color: #424242;
+	margin-top: 7%;
+	float: left;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form {
+	width: 80%;
+	height: 402px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form .previsualisacaoImgCom {
+	width: 250px;
+	height: 150px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 0 0 0 24%;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form .previsualisacaoImgCom img { 
+	height: 150px;
+	text-align: center;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form input[type=file]{ 
+	margin: 5px 0 10px -6%;
+	padding: 12px;	
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form input[type=text],
+.areaCriacaoComunidade #caixaCriarCominidade form textarea {
+	width: 68%;
+	height: 3em;
+	margin-top: 6px;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form input[type=text] {
+	border: none;
+	border-bottom: 1px solid #DCDCDC;
+	text-align: center;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form textarea {
+	margin-bottom: 6px;
+	height: 7em;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.areaCriacaoComunidade #caixaCriarCominidade form input[type=submit] {
+	height: 3em;
+	width: 68%;
+	margin: 12px 0 15px 0;
+	font-size: 18px;
+}
+
+/*************************
+*** CRIAR TOPICO
+*************************/
+#criarTopicoCaixa {
+	position: fixed;
+	top: 2%;
+	min-height: 590px;
+	width: 80%;
+	max-width: 1015px;
+	margin-left: 10%;
+	background-color: #fff;
+	border-radius: 6px;
+	z-index: 100;
+	display: none;
+	overflow: hidden;
+}
+
+#criarTopicoCaixa .LadoTopicoImagem {
+	float: left;
+	width: 20%;
+	height: 590px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+#criarTopicoCaixa form {
+	width: 80%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	max-height: 476px;
+}
+
+#criarTopicoCaixa .topicoIconeTopo { 
+	height: 70px;
+	float: left;
+	margin: 20px 0 20px 27%;
+}
+
+#criarTopicoCaixa h2 {
+	margin: 40px 0 15px 8px;
+	float: left;
+	text-transform: capitalize;
+	color: #1A237E;
+}
+
+#criarTopicoCaixa input[type=text],
+#criarTopicoCaixa textarea {
+	width: 90%;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 6px;;
+	margin: 0 0 6px 5%;
+}
+
+#criarTopicoCaixa #adicionarMidia { 
+	min-height: 55px;
+	width: 80%;
+	font-size: 12px;
+	margin: 10px 0 0 10%;
+}
+
+#criarTopicoCaixa #adicionarMidia #tipRadio,
+.editarTopico #tipRadio { display: inline;}
+
+#criarTopicoCaixa #adicionarMidia input[type=radio] { margin-bottom: 20px;}
+
+#criarTopicoCaixa #adicionarMidia input[type=file],
+#criarTopicoCaixa #adicionarMidia input[type=text] {	
+	width: 70%;
+	margin-left: -5px;
+}
+
+#criarTopicoCaixa #adicionarMidia input[type=file] { margin-left: 25%;}
+
+#criarTopicoCaixa .previsualizacaoMidia {
+	width: 80%;
+	height: 220px;
+	margin: 0 0 6px 10%;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#criarTopicoCaixa #pevMidUpImgTop,
+#criarTopicoCaixa #prevMidEmbVidImTop{ display: none;}
+
+#criarTopicoCaixa .previsualizacaoMidia img,
+#criarTopicoCaixa .previsualizacaoMidia video,
+#criarTopicoCaixa .previsualizacaoMidia iframe { height: 250px;}
+
+#criarTopicoCaixa .previsualizacaoMidia iframe { width: 80%;}
+
+#criarTopicoCaixa input[type=submit] { 
+	margin: 3px 0 6px 22%;
+	width: 50%;
+	height: 3em;
+	font-size: 19px;
+}
+
+#criarTopicoCaixa #detalhesUpload {
+	width: 80%;
+	margin: 5px 0 4px 12%;
+	display: none;
+}
+
+#criarTopicoCaixa #detalhesUpload #uploadProgressoTexto {
+	font-size: 11px;
+	width: 80%;
+	margin-left: 12%;
+}
+
+#criarTopicoCaixa #detalhesUpload #barraUpload {
+	width: 80%;
+	margin-left: 10%;
+	height: 4px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+}
+
+#criarTopicoCaixa #detalhesUpload #uploadBarraDeProgresso {
+	height: 100%;
+	width: 20%;
+	background-color: #1565C0;
+}
+
+/*************************
+*** EDITAR COMUNIDADE 
+*************************/
+#editarComunidadeCaixa {
+	display: none;
+	position: fixed;
+	width: 50%;
+	top: 15%;
+	left: 25%;
+	padding: 6px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	background-color: #fff;
+	z-index: 100;
+}
+
+#editarComunidadeCaixa #editarIcone {
+	height: 70px;
+	float: left;
+	margin: 5px 0 15px 6px;
+}
+
+#editarComunidadeCaixa h4 {
+	float: left;
+	margin: 30px 0 20px 10px;
+	color: #004D40;
+}
+
+#editarComunidadeCaixa #editarFotoCaixa,
+#editarComunidadeCaixa #editarNomeCaixa,
+#editarComunidadeCaixa #editarDescricaoCaixa {
+	margin: 105px 0 0 60px;
+	display: none;
+}
+
+#editarComunidadeCaixa #editarFotoCaixa .fotoRec { float: left;}
+
+#editarComunidadeCaixa #editarFotoCaixa .editFotoComunRecente,
+#editarComunidadeCaixa #editarFotoCaixa .editFotoComunNova {
+	width: 200px;
+	height: 150px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	margin: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+
+#editarComunidadeCaixa #editarFotoCaixa .editFotoComunRecente img ,
+#editarComunidadeCaixa #editarFotoCaixa .editFotoComunNova img { height: 150px;}
+
+#editarComunidadeCaixa input[type=text],
+#editarComunidadeCaixa textarea { 
+	width: 80%;
+	margin: 5px 0 0 10%;
+}
+
+#editarComunidadeCaixa textarea { height: 200px;}
+
+#editarComunidadeCaixa input[type=submit] { margin: 10px 0 10px 34%;}
+
+/*************************
+*** EDITAR TOPICO
+*************************/
+.editarTopico {
+	position: fixed;
+	top: 3%;
+	left: 10%;
+	width: 80%;
+	max-width: 1100px;
+	height: 600px;
+	background-color: #fff;
+	border: 1px solid #DCDCDC;
+	border-radius: 6px;
+	padding: 6px;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+}
+
+.editarTopico #editarTopicoLogo {
+	height: 100px;
+	float: left;
+	margin: 0 6px 6px 0;
+}
+
+.editarTopico h4 { margin: 46px 0 36px 0;}
+
+.editarTopico .editarTopicoEncapForm {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 494px;
+}
+
+.editarTopico small { margin: 0 0 0 20%}
+
+.editarTopico .midiaOriginal,
+.editarTopico .midiaNova { float: left;}
+
+.editarTopico .midiaNova .previsualizacaoMidia,
+.editarTopico .midiaOriginal .visualizacaoMidiaOrig {
+	width: 470px; 
+	height: 280px;  
+	border: 1px solid #DCDCDC; 
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 0 0 0 30px;
+	text-align: center;
+}
+
+.editarTopico #adicionarMidia {
+	margin-top: 305px;
+	font-size: 12px;
+}
+
+.editarTopico input[type=text],
+.editarTopico input[type=file],
+.editarTopico textarea {
+	width: 90%;
+	margin: 0 0 6px 5%;
+}
+
+.editarTopico #tipRadio { margin: 0 0 0 47px;}
+
+.editarTopico textarea { height: 200px;}
+
+.editarTopico .preVisMidEditTop,
+.editarTopico .midiaNova .previsualizacaoMidia #preVisMidCricTop,
+.editarTopico video,
+.editarTopico iframe { 
+	height: 280px;
+	margin: 0 0 6px 0;
+}
+
+.editarTopico .btnEditarTopico { margin: 0 0 20px 7%;}
+
+.editarTopico .editarTopicoMensagem { margin: 0 0 0 7%;}
+
+.editarTopico  .barraDivEditTop {
+	width: 50%;
+	margin: -8px 0 25px 25%;
+	color: #fff;
+}
+
+/*************************
+*** EDITAR POST
+*************************/
+.postArea .post .postRodape .editPost textarea {
+	width: 90%;
+	margin: 5px 0 6px 1%;
+	height: 145px;
+}
+
+/*************************
+*** DELETAR COMUNIDADE, TOPICO, POST
+*************************/
+.comunidadeColunaPrincipal .areaTopicos .delTopicoCaixa,
+.topicosPesquisa .delTopicoCaixa,
+.indexColunaPrincipal .messConfirmDelComunidade,
+.postArea .post .postRodape .delPost,
+.postArea .post .postRodape .editPost {
+	position: fixed;
+	background-color: #fff;
+	padding: 4px 8px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	z-index: 100;
+	top: 30%;
+	width: 50%;
+	left: 25%;
+	display: none;
+	text-align: center;
+	max-width: 700px;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .delTopicoCaixa input[type=text],
+.topicosPesquisa .delTopicoCaixa input[type=text],
+.indexColunaPrincipal .messConfirmDelComunidade input[type=text], 
+.postArea .post .postRodape .delPost input[type=text] {
+	width: 90%;
+	margin: 5px 0 5px 3%;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .delTopicoCaixa input[type=submit],
+.topicosPesquisa .delTopicoCaixa input[type=submit],
+.indexColunaPrincipal .messConfirmDelComunidade input[type=submit],
+.postArea .post .postRodape .delPost input[type=submit],
+.postArea .post .postRodape .editPost input[type=submit] { margin: 5px 0;}

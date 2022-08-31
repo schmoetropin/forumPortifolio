@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1265px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #altaResolucaoUlBarraTopo { display: block;}
+	
+	header #baixaResolucaoUlBarraTopo { display: none;}
+	
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4TopCompleto { margin: 0 0 0 18px;}
+
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeBarraDireita { margin-right: 1%;}
+	
+	.comunidadeBarraDireita .descricaoComunidade, 
+	.comunidadeBarraDireita .comunidadeStatus, 
+	.comunidadeBarraDireita .comunidadeModeradores { width: 230px;}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video{ width: 600px;}
+	
+	/*************************
+	*** PERFIL
+	*************************/
+	.barraTopoPerfil { width: 780px;}
+	.barraTopoPerfil h4 { width: 130px;}
+	.conteudoPerfil{ width: 776px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div,
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div img {width: 185px;}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada { 
+		height: 104px;
+		font-size: 12px;
+	}
+	.cRequerimento #reqModEnviadaArea .modReqEnviada div,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada div { 
+		margin: 5px 5px 2px 31%;
+		width: 50px;
+		height: 50px;
+	}
+	.cRequerimento #reqModEnviadaArea .modReqEnviada div img,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada div img { width: 50px;}
+	.cRequerimento #reqModEnviadaArea .modReqEnviada h4,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada h4 {
+		margin: 0 0 0 2px;
+		float: none;
+	}
+	.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button { 
+		font-size: 12px;
+		margin: -12px 23% 0 0 ;
+	}
+
+	.cRequerimento .requisicaoAmizadeEnviado { min-height: 119px;}
+
+	.cRequerimento .requisicaoAmizadeEnviado .foto { margin: 5px 0 0 30%;}
+
+	.cRequerimento .requisicaoAmizadeEnviado .nome { float: none;}
+
+	.cRequerimento .requisicaoAmizadeEnviado button { margin: 14px 23% 0 0px;}
+}

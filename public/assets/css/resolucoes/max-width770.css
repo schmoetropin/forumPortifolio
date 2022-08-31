@@ -1,0 +1,63 @@
+@media only screen and (max-width: 770px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #barraPesquisaTopo { 
+		width: 400px;
+		margin-left: 3%;
+	}
+	
+	header #barraPesquisaTopo input[type=text]{ width: 89%;}
+
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro {
+		width: 60%;
+		margin: 0 0 0 20%;
+	}
+
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4Topicos,
+	.top4TopicosIndex { height: 204px;}
+
+	.indexColunaPrincipal .bordaComunidade { min-height: 120px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade { font-size: 11px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 13px;}
+	
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade {
+		width: 150px;
+		height: 90px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade img{	width: 165px;}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade .comunidadeIconeTopo { margin-left: 2%;}
+
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeBarraDireita .descricaoComunidade, 
+	.comunidadeBarraDireita .comunidadeStatus, 
+	.comunidadeBarraDireita .comunidadeModeradores { width: 165px;}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico { min-height: 180px;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico { min-height: 180px;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem, 
+	.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem img { width: 95px;}
+}

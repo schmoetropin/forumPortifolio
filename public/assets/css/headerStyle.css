@@ -1,0 +1,183 @@
+/*************************
+*** HEADER BARRA TOPO
+*************************/
+header {
+	height: 35px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	width: 100%;
+	max-width: 1360px;
+	border-bottom: 1px solid #E0E0E0;
+	padding: 0 5px;
+	box-sizing: border-box;
+	z-index: 90;
+}
+
+header a #logo {
+	float: left;
+	height: 28px;
+	margin-top: 3px;
+}
+
+header #barraPesquisaTopo {
+	float: left;
+	border: 1px solid #E8E8E8;
+	width: 560px;
+	height: 26px;
+	border-radius: 30px;
+	margin: 3px 0 0 14%;
+}
+
+header #barraPesquisaTopo img {
+	height: 14px;
+	float: left;
+	margin: 6px 0 0 7px;
+}
+
+header #barraPesquisaTopo #limparBarraPesquisa{ cursor: pointer;}
+
+header #barraPesquisaTopo input[type=text] {
+	border: none;
+	margin-top: 5px;
+	text-align: center;
+	width: 91%;
+	float: left;
+}
+
+header #barraPesquisaTopo button {
+	border: none;
+	background-color: transparent;	
+}
+
+header #botaoEsconderBarraTopo{ float: left;}
+
+header #botaoEsconderBarraTopo #imgEsconderBarraTopo { 
+	height: 12px;
+	margin: 18px 0 0 6px;
+}
+
+header #altaResolucaoUlBarraTopo {	float: right;}
+
+header #altaResolucaoUlBarraTopo li { 
+	display: inline;
+	margin-right: 25px;
+}
+
+header #altaResolucaoUlBarraTopo li img { 
+	height: 16px;
+	margin-top: 6px;
+	border-top: 2px solid transparent;
+	padding-top: 2px;
+}
+
+header #altaResolucaoUlBarraTopo li img:hover { border-top: 2px solid #1976D2;}
+
+header #altaResolucaoUlBarraTopo li #botaoLogout:hover { border-top: 2px solid #ff0000;}
+
+header #altaResolucaoUlBarraTopo li #botaoRegistro {
+	float: right;
+	width: 10em;
+	height: 22px;
+	margin: 7px 0 0 -15px;
+}
+
+header #botaoMenuUlBarraTopo {
+	float: right;
+	margin: 7px 10px 0 0;
+	display: none;
+}
+
+header #botaoMenuUlBarraTopo img { height: 20px;}
+
+header #baixaResolucaoUlBarraTopo {
+	position: absolute;
+	right: 10px;
+	top: 34px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 2px;
+	min-width: 6.2em;
+	display: none;
+}
+
+header #baixaResolucaoUlBarraTopo li img { 
+	height: 16px;
+	margin-top: 6px;
+	border-top: 2px solid transparent;
+	padding-top: 2px;
+}
+
+header #baixaResolucaoUlBarraTopo li img:hover { border-top: 2px solid #1976D2;}
+
+header #baixaResolucaoUlBarraTopo li #botaoLogout:hover { border-top: 2px solid #ff0000;}
+
+header #baixaResolucaoUlBarraTopo li #botaoRegistro {
+	width: 7em;
+	height: 22px;
+	margin-top: 7px;
+}
+
+/*************************
+*** CAIXA LOGIN
+*************************/
+#caixaLogin {
+	position: absolute;
+	right: 15px;
+	top: 50px;
+	display: none;
+	margin-top: -10px;
+	text-align: center;
+	border: 1px solid #E0E0E0;
+	padding: 3px 3px 8px 3px;
+	background-color: transparent;
+	border-radius: 6px;
+	position: fixed;
+}
+
+#caixaLogin form input[type=email],
+#caixaLogin form input[type=password] {
+	border: none;
+	border-bottom: 1px solid #DCDCDC;
+	height: 22px;
+	width: 14em;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+#caixaLogin form input[type=submit] {
+	width: 6em;
+	height: 21px;
+	margin-top: 4px;
+}
+
+/*************************
+*** BARRA TOPO ESCONDIDA
+*************************/
+.barraAtrazHeadHidden{
+	width: 100%;
+	max-width: 1360px;
+	position: fixed;
+	top: 0;
+}
+
+.barraAtrazHeadHidden .linkPerfilEscondido img { 
+	width: 19px;
+	float: right;
+	margin: 2px 10px 0 0;
+	border-top: 2px solid transparent;
+	padding-top: 2px;
+}
+
+.barraAtrazHeadHidden .linkPerfilEscondido img:hover { border-color: #1976D2;}
+
+.barraAtrazHeadHidden #botaoExibirBarraTopo { 
+	height: 12px;
+	cursor: pointer;
+	display: none;
+	float: left;
+	margin: 9px 0 0 60.5%;
+}
+
+.barraAtrazHeadHidden #botaoExibirBarraTopo img{ height: 12px;}

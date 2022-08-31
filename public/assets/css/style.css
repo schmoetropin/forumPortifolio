@@ -1,0 +1,214 @@
+/*************************
+*** MENSAGENS SUBMIT
+*************************/
+.mensagemErroDiv{
+	font-size: 11px;
+	color: #EF5350;
+	position: fixed;
+	z-index: 9999;
+	display: none;
+	min-height: 100px;
+	width: 50%;
+	top: 15%;
+	left: 25%;
+	background-color: #fff;
+	border: 1px solid #DCDCDC;;
+	border-radius: 4px;
+	padding: 6px;
+}
+.mensagemErroDiv button{
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	width: 10%;
+}
+
+.mensagemErro{
+	font-size: 11px;
+	color: #EF5350;
+}
+
+.mensagemSucesso{ color: #4DB6AC;}
+
+/*************************
+*** LIKE
+*************************/
+.LikeArea {
+	font-size: 11px;
+	float: right;
+	margin: 4px 10px 0 0;
+}
+
+.LikeArea .likeAreaBotao { 
+	float: left;
+	margin: -4px 6px 0 0;
+}	
+
+.LikeArea .likeAreaBotao img { height: 18px;}
+
+/*************************
+*** MENSAGEM
+*************************/
+
+.chatArea{
+	margin:-15px 0 0 20%;
+	width: 60%;
+	height: 500px;
+	border: 2px solid #222;
+	background-color: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.chatArea .usuarioChat{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 8px;
+	background-color: #222;
+}
+
+.chatArea .usuarioChat .voltarPerfil{ 
+	float: left;
+	margin-top: 10px;
+}
+
+.chatArea .usuarioChat .imagemPerfilChat {
+	float: left;
+	border: 1px solid #fff;
+	height: 40px;
+	width: 40px;
+	border-radius: 60%;
+	margin: 10px 10px 10px 30px;
+	overflow: hidden;
+}
+
+.chatArea .usuarioChat .imagemPerfilChat img{
+	width: 40px;
+}
+
+.chatArea .usuarioChat h3{
+	margin-left: 40%;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.chatArea .chatMensagens{
+	height: 320px;
+	width: 80%;
+	border: 2px solid #BBB;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 10px 0 5px 10%;
+	padding: 4px;
+	border-radius: 6px;
+}
+
+.chatArea .chatFormDiv{
+	width: 100%;
+	height: 89px;
+}
+
+.chatArea .chatFormDiv textarea{
+	width: 80%;
+	height: 50px;
+	border: 2px solid #BBB;
+	font-size: 12px;
+	float: left;
+	margin-left: 2%;
+	padding: 4px;
+	border-radius: 6px;
+}
+
+.chatArea .chatFormDiv button{
+	height: 59px;
+	width: 15%;
+}
+
+
+.enviadoPorUsuario {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	width: 50%;
+	margin: 6px 0 6px 25%;
+	min-height: 81px;
+	padding: 2px;
+}
+
+.enviadoPorUsuario #foto {
+	height: 80px;
+	width: 80px;
+	border-radius: 4px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+
+.enviadoPorUsuario #foto img { width: 80px;}
+
+.enviadoPorUsuario #nome { 
+	margin-top: 35px;
+	text-transform: capitalize;
+}
+
+/*************************
+*** FOOTER
+*************************/
+.siteTopoInferirorLimite { 
+	width: 100%;
+	height: 100%;
+	margin: 80px 0 50px 0;
+	float: left;
+}
+
+footer {
+	height: 20px;
+	width: 100%;
+	max-width: 1360px;
+	background-color: #222;
+	bottom:0;
+	position: fixed;
+	z-index: 90;
+}
+
+footer p {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 10px;
+	line-height: 20px;
+	text-transform: capitalize;
+}
+
+.footerLinksContato img{
+	width: 15px;
+	height: 15px;
+}
+
+.enviarEmailDiv { 
+	display: none;
+	position: fixed;
+	bottom: 4%;
+	right: 1%;
+	z-index: 99;
+	border: #DCDCDC solid 1px;
+	border-radius: 4px;
+	padding: 8px;
+	background-color: #fff;
+	font-size: 12px;
+}
+
+.enviarEmailDiv input{
+	padding: 3px;
+	border-radius: 3px;
+	border: #DCDCDC 1px solid ;
+}
+
+.copiarEmailMens{ 
+	position: fixed;
+	bottom: 12%;
+	right: 1%;
+	border: #DCDCDC 1px solid;
+	font-size: 12px;
+	padding: 4px;
+	display: none;
+}

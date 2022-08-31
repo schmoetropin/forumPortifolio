@@ -1,0 +1,168 @@
+@media only screen and (max-width: 615px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #barraPesquisaTopo { 
+		width: 300px;
+		margin-left: 2%;
+	}
+	
+	header #barraPesquisaTopo input[type=text]{ width: 85%;}
+	
+	header ul li { margin-right: 18px;}
+	
+	header ul li img { 
+		height: 13px;
+		margin-top: 6px;
+		border-top: 2px solid transparent;
+		padding-top: 2px;
+	}
+	
+	#botaoExibirBarraTopo { top: 9px;}
+	
+	/****************************
+	*** INDEX COMUNIDADES
+	****************************/
+	.top4Topicos,
+	.top4TopicosIndex { height: 155px;}
+
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 110px;
+		height: 90px;
+	}
+
+	.indexColunaPrincipal {
+		width: 97%;
+		margin-left: 1%;
+	}
+	
+	.indexColunaPrincipal .bordaComunidade { min-height: 120px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade { font-size: 11px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 13px;}
+	
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade {
+		width: 120px;
+		height: 85px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade img{	width: 135px;}
+	
+	.indexColunaPrincipal .bordaComunidade .statusComunidade {
+		margin-right: 17px;
+		padding-left: 10px;
+		margin-top: 10px;
+		padding-top: 12px;
+		font-size: 10px;
+		border-left: 1px solid #DCDCDC;
+		height: 60px;
+	}
+	
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeColunaPrincipal .areaTopicos .topico ul,
+	.topicosPesquisa .topico ul  { display: none;}
+	
+	.comunidadeBarraDireita .descricaoComunidade{ width: 107px;}
+
+	.comunidadeBarraDireita .descricaoComunidade p { display: none;}
+
+	.comunidadeColunaPrincipal .comunidadeBarraDireita .descricaoComunidade #areaInscricao button,
+	.comunidadeColunaPrincipal .comunidadeBarraDireita .descricaoComunidade #botaoCriarTopico {width: 8em;}
+
+	.comunidadeBarraDireita .comunidadeStatus,
+	.comunidadeBarraDireita .comunidadeModeradores { display: none;}
+
+	/*************************
+	*** EDITAR COMUNIDADE
+	*************************/
+	#editarComunidadeCaixa #editarIcone {
+		height: 35px;
+		margin-top: 18px;
+	}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { width: 250px;}
+
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { height: 200px;}
+
+	.paginaTopico .postArea .post .comentarioPost textarea { 
+		width: 62%;
+		height: 2.5em;
+	}
+	
+	.paginaTopico .postArea .post .comentarioPost input[type=submit] { 
+		width: 6.5em;
+		font-size: 11px;
+	}
+	
+	.paginaTopico .postArea .post .conteudoPost, 
+	.conteudoPerfil .cPosts .post .conteudoPost { width: 54%;}
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico #tipRadio { 
+		display: block;
+		margin: 0 0 0 5%;
+	}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.perfilColunaPrincipal{
+		width: 99%;
+		margin-left: .5%;
+	}
+
+	.informacaoUsuarioEsquerda { 
+		width: 8%;
+		margin-left: 2px;
+	}
+
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 10px;}
+	
+	.barraTopoPerfil { width: 500px;}
+	
+	.conteudoPerfil{ width: 496px;}
+
+	.cTopicos .topicoInteiro .topico .topicoConteudo { margin-left: 2px;}
+
+	.cMensagens #botaoEnviarMensagem { font-size: 11px;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 400px;}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button { font-size: 11px;}
+
+	.cRequerimento .requisicaoAmizadeEnviado button { font-size: 12px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div { width: 139px;}
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div img { width: 145px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recForm input[type="submit"] {
+		width: 65px;
+		padding: 1px;
+	}
+
+	.cRequerimento .requisicaoAmizade .foto {
+		width: 60px;
+		height: 60px;
+	}
+
+	.cRequerimento .requisicaoAmizade .foto img {width: 60px;}
+
+	.cRequerimento .requisicaoAmizade form { float: left;}
+}

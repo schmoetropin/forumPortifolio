@@ -1,0 +1,83 @@
+.top4Topicos,
+.top4TopicosIndex {
+	width: 100%;
+	height: 270px;
+}
+
+.top4TopCompleto {
+	float: left;
+	margin: 0 0 0 35px;
+	border: 1px solid #DCDCDC;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.top4TopCompleto:hover { border-color: #AAA;}
+
+.top4TopCompleto:hover .conteudoTopico { color: #222;}
+
+.top4TopCompleto:hover .top4top .titulo { background-color: #001d38;}
+
+.top4TopCompleto:hover .top4top .conteudo img { 
+	width:500px;
+	margin: 0 0 0 -50px;
+}
+
+.top4Topicos .top4top .titulo,
+.top4TopicosIndex .top4top .titulo {
+	background-color: #222;
+	padding: 2px 3px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.top4Topicos .top4top .titulo h5,
+.top4TopicosIndex .top4top .titulo h5 {
+	text-transform: capitalize;
+	color: #fff;
+}
+
+.top4TopCompleto .conteudoTopico {
+	font-size: 12px;
+	transition: color .5s;
+}
+
+.top4Topicos .top4top .conteudo,
+.top4TopicosIndex .top4top .conteudo {
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	font-size: 12px;
+}
+
+.top4Topicos .top4top .conteudo img,
+.top4Topicos .top4top .conteudo video,
+.top4TopicosIndex .top4top .conteudo img,
+.top4TopicosIndex .top4top .conteudo video { 
+	width: 360px;
+	transition: width .5s, margin .5s;
+}
+
+.top4Topicos .top4top .conteudo iframe,
+.top4TopicosIndex .top4top .conteudo iframe {
+	width: 251px;
+	height: 201px;
+}
+
+.top4Topicos .top4topicoRodape a,
+.top4TopicosIndex .top4topicoRodape a {
+	font-size: 12px;
+	text-transform: capitalize;
+	float: left;
+	margin: 2px 0 0 0;
+}
+
+.top4Topicos .top4topicoRodape .likes,
+.top4TopicosIndex .top4topicoRodape .likes { 
+	float: right;
+	margin: 2px 0;
+}
+.top4Topicos .top4topicoRodape .likes img,
+.top4TopicosIndex .top4topicoRodape .likes img { height: 14px;}

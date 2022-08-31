@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1330px) {
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/	
+	.comunidadeBarraDireita { margin-right: 7%;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.barraTopoPerfil { width: 900px;}
+	.barraTopoPerfil h4 { width: 150px;}
+	.conteudoPerfil { width: 896px;}
+}

@@ -1,0 +1,170 @@
+@media only screen and (max-width: 1160px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #barraPesquisaTopo { margin-left: 10%;}
+	
+	header #altaResolucaoUlBarraTopo li{ margin-right: 18px;}
+	
+	header #altaResolucaoUlBarraTopo li #botaoRegistro { width: 7em;}
+
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4TopCompleto { margin: 0 0 15px 8px;}
+
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 220px;
+		height: 180px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade { 
+		font-size: 12px;
+		width: 47%;
+	}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 14px;}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade form .previsualisacaoImgCom { margin-left: 20%;}
+	
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeBarraDireita { margin-right: 3%;}
+	
+	.comunidadeColunaPrincipal .areaTopicos { width: 680px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario { 
+		padding: 0;
+		margin: 4px;
+	}
+
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo { width: 50%;}
+
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo img,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo video,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo iframe { max-width: 480px;}
+
+	.comunidadeColunaPrincipal .areaTopicos .topico ul,
+	.topicosPesquisa .topico ul { display: none;}
+
+	/*************************
+	*** CRIAR TOPICO
+	*************************/
+	#criarTopicoCaixa #adicionarMidia {
+		margin: 10px 0 0 26%;
+		font-size: 11px;
+	}
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig,
+	.editarTopico .midiaNova .previsualizacaoMidia { 
+		width: 350px;		
+		height: 240px;
+	}
+
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig img,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig video,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig iframe,
+	.editarTopico .midiaNova .previsualizacaoMidia img,
+	.editarTopico .midiaNova .previsualizacaoMidia video,
+	.editarTopico .midiaNova .previsualizacaoMidia iframe { height: 240px;}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe,
+	.topicosPesquisa .topico .topicoConteudo img,
+	.topicosPesquisa .topico .topicoConteudo video,
+	.topicosPesquisa .topico .topicoConteudo iframe { width: 500px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto {
+		height: 100px;
+		width: 140px;
+		margin-left: 18%;
+	}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto img { width: 140px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #inscreverComunidadeTopico { margin-left: 0;}
+	
+	.paginaTopico .postArea .post .comentarioPost textarea { width: 72%;}
+
+	/*************************
+	*** LIKE
+	*************************/
+	.LikeArea { margin-left: 0;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.informacaoUsuarioEsquerda { 
+		width: 15%;
+		margin-left: 15px;
+	}
+
+	.informacaoUsuarioEsquerda .fotoPerfil {
+		width: 120px;
+		height: 120px;
+	}
+
+	.informacaoUsuarioEsquerda img { width: 120px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa h4 {font-size: 14px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa #sairModComun form input[type="submit"] { margin-left: 72%;}
+	
+	.barraTopoPerfil { width: 600px;}
+	.barraTopoPerfil h4 { 
+		width: 100px;
+		font-size: 10px;
+	}
+	.conteudoPerfil{ width: 596px;}
+
+	.cTopicos .topicoInteiro .topico .topicoUsuario { font-size: 10px;}
+	
+	.cTopicos .topicoInteiro .topico .topicoUsuario div {
+		width: 60px;
+		height: 60px;
+	}
+
+	.cTopicos .topicoInteiro .topico .topicoUsuario div img { width: 60px;}
+
+	.cTopicos .topicoInteiro .topico .topicoConteudo { margin-left: 0;}
+
+	.cMensagens #botaoEnviarMensagem { width: 12%;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 400px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div,
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div img {width: 165px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recConteudo { 
+		width: 25%;
+		margin: 11px 5px 0 6px;
+		font-size: 10px;
+	}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button { margin: -12px 17% 0 0;}
+
+	.cRequerimento .requisicaoAmizadeEnviado button { margin: 14px 17% 0 0px;}
+
+	.cRequerimento .requisicaoAmizade .nome { 
+		font-size: 12px;
+		margin: 35px 0 0 0;
+	}
+
+	.cRequerimento .requisicaoAmizade button { 
+		margin: 13px 0 0 20%; 
+		float: none;
+	}
+}

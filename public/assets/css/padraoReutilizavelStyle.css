@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	color: #606060;
+	font-family: sans-serif;
+}
+
+body {
+	min-width: 300px;
+	max-width: 1360px;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5F5;
+	font-size: 15px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.hrPadrao {
+	width: 50%;
+	margin: 5px 0 7px 25%;
+	color: #fff;
+}
+
+ul { list-style: none;}
+
+a, a:hover, a:active, a:focus { text-decoration: none;}
+
+a,
+input:focus,
+button { outline: none;}
+
+input[type=submit],
+button { cursor: pointer;}
+
+input[type=text]:invalid,
+input[type=file]:invalid,
+input[type=email]:invalid,
+input[type=password]:invalid,
+textarea:invalid { box-shadow: none;}
+
+/*************************
+*** REUTILIZAVEL
+*************************/
+.btn {
+	border: 1px solid #455A64;
+	background-color: #455A64;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 3px 5px;
+}
+
+.btn:hover {
+	background-color: #37474F;
+	border-color: #37474F;
+}
+
+.btnAzul {
+	background-color: #1565C0;
+	border-color: #1565C0;
+}
+
+.btnAzul:hover {
+	background-color: #0D47A1;
+	border-color: #0D47A1;
+}
+
+.btnVermelho {
+	background-color: #c62828;
+	border-color: #c62828;
+}
+
+.btnVermelho:hover {
+	background-color: #b71c1c;
+	border-color: #b71c1c;
+}
+
+.btnVerde {
+	background-color: #00695C;
+	border-color: #00695C;
+}
+
+.btnVerde:hover {
+	background-color: #004D40;
+	border-color: #004D40;
+}
+
+.btnLaranja {
+	background-color: #F57C00;
+	border-color: #F57C00;
+}
+
+.btnLaranja:hover {
+	background-color: #E65100;
+	border-color: #E65100;
+}
+
+.btnTransparente {
+	background-color: transparent;
+	border-color: #eee;
+	color: #aaa;
+}
+
+.btnTransparente:hover {
+	background-color: #eee;
+	border-color: #eee;
+}
+
+.btnInvisivel {
+	border: none;
+	background-color: transparent;
+}
+
+.mensagemSucesso,
+.mensagemErro {
+	color: #ff0000;
+	font-size: 13px;
+	margin-left: 6px;
+	font-weight: bold;
+}
+
+.mensagemSucesso { color: #009688;}
+
+.mensagemNeutra { color: #455A64;}

@@ -1,0 +1,78 @@
+create database board_proj;
+
+use board_proj;
+
+create table user_type (
+    id int not null auto_increment primary key,
+    type varchar(10) not null unique
+);
+
+insert into user_type(id, type) values(1, 'user');
+insert into user_type(id, type) values(2, 'moderator');
+insert into user_type(id, type) values(3, 'admin');
+
+create table users (
+    id int not null auto_increment primary key,
+    name varchar(20) not null,
+    unique_name varchar(255) not null unique,
+    email varchar(255) not null unique,
+    profile_pic varchar(255) not null,
+    password varchar(524) not null,
+    number_posts int not null default 0,
+    number_topics int not null default 0,
+    number_friends int not null default 0,
+    number_subscriptions int not null default 0,
+    created_at date not null,
+    user_type int not null default 1,
+    constraint us_type_fk foreign key(user_type) references user_type(id) on delete cascade on update cascade
+);
+
+create table communities (
+    id int not null auto_increment primary key,
+    name varchar(20) not null,
+    unique_name varchar(255) not null unique,
+    description varchar(150) not null,
+    community_picture varchar(255) not null,
+    topics int not null default 0,
+    posts int not null default 0,
+    subscribers int not null default 0,
+    created_at date not null,
+    updated_at datetime not null,
+    rules text,
+    created_by int,
+    constraint cr_by_fk foreign key(created_by) references users(id) on delete set null on update cascade
+);
+
+create table moderators(
+    id int not null auto_increment primary key,
+    moderator int not null,
+    community int not null,
+    constraint mod_fk foreign key(moderator) references users(id) on delete cascade on update cascade,
+    constraint com_fk foreign key(community) references communities(id) on delete cascade on update cascade
+);
+
+create table topics(
+    id int not null auto_increment primary key,
+    name varchar(90) not null,
+    unique_name varchar(255) not null unique,
+    content text not null,
+    file_extension varchar(10),
+    file varchar(255),
+    link varchar(500),
+    created_at datetime not null,
+    updated_at datetime not null,
+    posts int not null default 0,
+    likes int not null default 0,
+    created_by int,
+    in_community int not null,
+    constraint creat_fk foreign key(created_by) references users(id) on delete set null on update cascade,
+    constraint in_com_fk foreign key(in_community) references communities(id) on delete cascade on update cascade
+);
+
+create table subscriptions(
+    id int not null auto_increment primary key,
+    user int not null,
+    community int not null,
+    constraint us_insc_fk foreign key(user) references users(id) on delete cascade on update cascade,
+    constraint com_insc_fk foreign key(community) references communities(id) on delete cascade on update cascade
+);

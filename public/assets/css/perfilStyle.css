@@ -1,0 +1,504 @@
+/*************************
+*** PERFIL
+*************************/
+.perfilIndice {
+	margin: -20px 0 15px 5%;
+	width: 89.3%;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	font-weight: bold;
+	padding: 2px;
+	text-transform: capitalize;
+	background-color: #fff;
+}
+
+.perfilIndice a:hover { color: #222;}
+
+.perfilColunaPrincipal {
+	width: 90%;
+	min-height: 600px;
+	margin-left: 5%;
+	border-radius: 6px;
+}
+
+.perfilColunaPrincipal .perfilCabecalho {
+	position: relative;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	width: 99%;
+	height: 120px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	overflow: hidden;
+}
+
+.perfilColunaPrincipal .perfilCabecalho img {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	z-index: 10;
+}
+
+.perfilCabecalho h3 {
+	position: absolute;
+	top: 60px;
+	left: 45%;
+	color: #fff;
+	text-shadow: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
+	z-index: 30;
+}
+
+.informacaoUsuarioEsquerda {
+	float: left;
+	width: 18%;
+	margin: -90px 0 0 20px;
+}
+
+.informacaoUsuarioEsquerda .fotoPerfil {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.informacaoUsuarioEsquerda img {
+	width: 150px;
+}
+
+.informacaoUsuarioEsquerda .tipoUsuario {
+	padding: 10px;
+	width: 140px;
+	margin-top: 10px;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa { 
+	display: none;
+	position: fixed;
+	top: 90px;
+	width: 40%;
+	margin: 0 0 0 30%;
+	border: 1px solid #DCDCDC;
+	border-radius: 6px;
+	height: 400px;
+	overflow-y: auto;
+	background-color: #fff;
+	padding: 6px;
+	z-index: 85;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa h3 {
+	float: left;
+	margin: 0 0 8px 0;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #00695C;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	line-height: 30px;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa #fecharModComunCaixa {
+	position: absolute;
+	float: right;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+	margin-left: -18px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa ul {
+	width: 90%;
+	margin: 45px 0 2px 5%;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa ul li {
+	height: 110px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	margin: 5px 5px 15px 5px;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem {
+	width: 180px;
+	max-height: 100px;
+	overflow: hidden;
+	float: left;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem img { width: 180px;}
+
+.informacaoUsuarioEsquerda #modComunCaixa h4 { 
+	line-height: 110px;
+	margin-left: 10px;
+	text-transform: capitalize;
+}
+
+.informacaoUsuarioEsquerda #modComunCaixa #sairModComun form input[type='submit'] {
+	margin: -38px 0 0 73%;
+	position: absolute;
+}
+
+.informacaoUsuarioEsquerda ul { margin-top: 20px;}
+
+.informacaoUsuarioEsquerda ul li { font-size: 15px;}
+
+.informacaoUsuarioEsquerda .logoutPerfil button {
+	width: 150px;
+	padding: 6px;
+}
+
+.barraTopoPerfil {
+	width: 934px;
+	background-color: #222;
+	height: 40px;
+	border: 2px solid #fff;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	margin: -40px 0 0 -2px;
+}
+
+.barraTopoPerfil #AltRes { display: block;}
+
+.barraTopoPerfil #baixRes { display: none;}
+
+.barraTopoPerfil #baixRes #baixResBotao img { height: 28px;}
+
+.barraTopoPerfil #baixRes div {
+	border: 1px solid #222;
+	border-radius: 6px;
+	background-color: #fff;
+	padding: 4px;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	margin: 2px 0 0 15px;
+}
+
+.barraTopoPerfil #baixRes div h4 {
+	color: #222;
+	font-size: 12px;
+	float: none;
+	height: 23px;
+	margin: 0;
+	padding: 2px;
+	border-radius: 4px;
+	line-height: 23px;
+}
+
+.barraTopoPerfil h4 {
+	float: left;
+	width: 155.3px;
+	height: 39px;
+	border-top: 1px solid transparent;
+	line-height: 40px;
+	cursor: pointer;
+	color: #fff;
+	background-color: transparent;
+	text-align: center;
+}
+
+.barraTopoPerfil #btSobre { border-top-left-radius: 12px;}
+
+.barraTopoPerfil #btRequerimento { border-top-right-radius: 12px;}
+
+.barraTopoPerfil .btTopoPerfil:hover { background-color: #333;}
+
+.barraTopoPerfil,
+.conteudoPerfil {
+	position: absolute;
+	left: 300px;
+	top: 250px;
+}
+
+.conteudoPerfil {
+	width: 930px;
+	min-height: 360px;
+	border: 2px solid #222;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 100px;
+	background-color: #fff;
+}
+
+.cSobre,
+.cTopicos,
+.cPosts,
+.cAmigos,
+.cMensagens,
+.cRequerimento { 
+	display: none;
+	min-height: 450px;
+	width: 97%;
+	margin: 10px;
+}
+
+.cSobre p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #A9A9A9;
+}
+
+.cSobre #botaoEditarPerfilCaixa { margin: 10px 0 0 5px;}
+
+.cSobre .editarPerfilCaixa { 
+	display: none;
+	margin: 10px 0 0 0;
+}
+
+.cSobre .tFotoPerfil input[type=submit],
+.cSobre .tNome input[type=submit],
+.cSobre .tEmail input[type=submit],
+.cSobre .tSenha input[type=submit],
+.cSobre .tDescricao input[type=submit] { padding: 8px;}
+
+.cSobre .tDescricao input[type=submit] { margin-top: 6px;}
+
+.cSobre .tNome input[type=text],
+.cSobre .tEmail input[type=email],
+.cSobre .tSenha input[type=password],
+.cSobre .tDescricao textarea {
+	border: 1px solid #DCDCDC;
+	border-radius: 5px;
+}
+
+.cSobre .tDescricao textarea { width: 98%;}
+
+.cSobre .tNome input[type=text],
+.cSobre .tEmail input[type=email],
+.cSobre .tSenha input[type=password] {
+	height: 30px;
+	width: 16em;
+	text-align: center;
+}
+
+.cSobre .usuarioInscricoes {
+	width: 96%;
+	height:150px;
+	border: 1px solid #DCDCDC;
+	margin-left: 1%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+
+.cSobre .usuarioInscricoes .usuarioComunidadeInsc {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 5px;
+	text-transform: capitalize;
+	font-weight: bold;
+	width: 171px;
+	float: none;
+	display: inline-block;
+}
+
+.cSobre .usuarioInscricoes .usuarioComunidadeInsc:hover { border-color: #888;}
+
+.cSobre .usuarioInscricoes .usuarioComunidadeInsc .foto {
+	height: 100px;
+	width: 170px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.cSobre .usuarioInscricoes .usuarioComunidadeInsc .foto img { 
+	width: 180px;
+	margin: 0 0 0 -5px;
+}
+
+.conteudoPerfil .cTopicos .divConteMarg { margin: 50px 20px 0 20px;}
+
+.conteudoPerfil .cTopicos .topicoInteiro .linkUsuario {
+	width: 0;
+}
+
+.cMensagens .abrirChatBotao {
+	display: inline-block; 
+	margin: 6% 0 0 40%; 
+	height: 4em; 
+	width: 10em; 
+	line-height: 4em;
+
+}
+
+.cAmigos .usAmigo {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 4px;
+	width: 90px;
+	float: left;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.cAmigos .usAmigo div {
+	height: 90px;
+	width: 90px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.cAmigos .usAmigo div img { width: 90px;}
+
+.cRequerimento #enviarRequerimentoAmizade,
+.cRequerimento #enviarRequisicaoAmizade {
+	width: 10em;
+	height: 4em;
+	margin-left: 40%;
+}
+
+.cRequerimento .requisicaoAmizade,
+.cRequerimento .requisicaoAmizadeEnviado {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	min-height: 90px;
+	width: 50%;
+	margin: 0 0 6px 25%;
+	position: relative;
+}
+
+.cRequerimento .requisicaoAmizade .foto,
+.cRequerimento .requisicaoAmizadeEnviado .foto {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10px;
+	float: left;
+}
+
+.cRequerimento .requisicaoAmizade .foto img,
+.cRequerimento .requisicaoAmizadeEnviado .foto img{ width: 70px;}
+
+.cRequerimento .requisicaoAmizade .nome,
+.cRequerimento .requisicaoAmizadeEnviado .nome {
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 35px 10px 0 10px;
+	float: left;
+}
+
+.cRequerimento .requisicaoAmizade button,
+.cRequerimento .requisicaoAmizadeEnviado button {
+	margin: 35px 10px 0 0;
+	float: right;
+}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	background-color: #fff;
+	width: 60%;
+	margin: 2px 0 2px 20%;
+	height: 95px;
+	position: relative;
+}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada h5 ,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada h5 { 
+	margin: 5px 0 0 5px;
+	text-transform: capitalize;
+}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada div,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada div {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 5px 5px 5px 8px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada div img,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada div img { width: 60px;}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada h4,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada h4 { 
+	line-height: 70px;
+	text-transform: capitalize;
+	float: left;
+	margin-right: 6px;
+}
+
+.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button {
+	margin: 22px 6px 0 0;
+	float: right;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida {
+	width: 70%;
+	margin: 3px 0 3px 15%;
+	border: 1px solid #DCDCDC;
+	border-radius: 6px;
+	background-color: #fff;
+	height: 140px;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade {float: left;}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div {
+	width: 200px;
+	height: 110px;
+	overflow: hidden;
+	border-radius: 4px;
+	margin: 5px;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div img { width: 200px;}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade h4 { text-align: center;}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recConteudo { 
+	width: 40%;
+	margin: 30px 5px 0 6px;
+	float: left;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recConteudo a p {
+	color: #00695C;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recForm {
+	float: right;
+	margin: 30px 5px 0 0;
+}
+
+.cRequerimento #reqModRecebidaArea .modReqRecebida .recForm input[type=submit]{
+	width: 6em;
+	margin: 6px 6px 0 0;
+}
+
+.cRequerimento #modReqPorAdmin .admConvidarUsMod {
+	border: 1px solid green;
+	background-color: #fff;
+	padding: 5px;
+}
+
+.cRequerimento #modRequerimentoFormArea #adicionarModeradorCaixa {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 6px 0 30px 20%;
+	width: 60%;
+	text-align: center;
+}

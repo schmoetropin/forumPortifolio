@@ -1,0 +1,25 @@
+/*****************************************
+***	MAX 1300
+*****************************************/
+@media only screen and (max-width: 1300px) {
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig,
+	.editarTopico .midiaNova .previsualizacaoMidia { 
+		width: 400px;		
+		height: 260px;
+	}
+
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig img,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig video,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig iframe,
+	.editarTopico .midiaNova .previsualizacaoMidia img,
+	.editarTopico .midiaNova .previsualizacaoMidia video,
+	.editarTopico .midiaNova .previsualizacaoMidia iframe { height: 260px;}
+
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico #postForm textarea { width: 80%;}
+}

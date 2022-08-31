@@ -1,0 +1,265 @@
+/*************************
+*** COMUNIDADE TOPICOS
+*************************/
+.comunidadeTopo {
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 170px;
+	overflow: hidden;
+	border-bottom: 3em solid #222;
+	margin-top: -45px;
+	box-sizing: border-box;
+}
+
+.comunidadeTopo .imagemFundo {  
+    width: 120%;
+    height: 100%;
+}
+
+.comunidadeTopo .inscreverCriarTopicoResBaixa {
+	position: absolute;
+	top: 49px;
+	right: 15px;
+	width: 140px;
+	text-align: center;
+	display: none;
+}
+
+.comunidadeTopo .inscreverCriarTopicoResBaixa button { margin-top: 5px;}
+.comunidadeTopo .inscreverCriarTopicoResBaixa input { margin-top: 5px;}
+
+.comunidadeTopo .imagemComunidade {
+	position: absolute; 
+	height: 120px;
+	width: 120px;
+	top: 120px;
+	left: 50px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.comunidadeTopo .imagemComunidade img { 
+	min-width: 120px;
+	min-height: 120px;
+	max-height: 140px;
+	margin-left: -10px;
+}
+
+.comunidadeTopo h2 {
+	position: absolute;
+	top: 170px;
+	left: 200px;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.profilePageTopPageLocation,
+.comunidadeIndice {
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.comunidadeIndice { 
+	float: left;
+	margin: 6px 0 0 200px;
+	background-color: #DCDCDC;
+}
+
+.profilePageTopPageLocation a:hover,
+.comunidadeIndice a:hover{ color: #01579B;}
+
+.comunidadeColunaPrincipal {
+	width: 100%;
+	margin: 65px 0 0 0;
+}
+
+.comunidadeColunaPrincipal .areaTopicos {
+	float: left; 
+	width: 850px; 
+	margin: 45px 0 0 3%;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico,
+.topicosPesquisa .topico,
+.conteudoPerfil .cTopicos .topico{
+	min-height: 200px;
+	max-height: 370px;
+	border: 1px solid #00376b;
+	border-radius: 4px;
+	background-color: #fff;
+	margin: 5px 0 36px 0;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 4;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico:hover,
+.topicosPesquisa .topico:hover,
+.conteudoPerfil .cTopicos .topico:hover { border-color: #001d38;}
+
+.comunidadeColunaPrincipal .areaTopicos .topico:hover h4,
+.topicosPesquisa .topico:hover h4,
+.conteudoPerfil .cTopicos .topico:hover h4 { background-color: #001d38;}
+
+.comunidadeColunaPrincipal .areaTopicos .topico h4,
+.topicosPesquisa .topico h4,
+.conteudoPerfil .cTopicos .topico h4 {
+	text-align: center;
+	padding: 5px;
+	background-color: #00376b;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario,
+.topicosPesquisa .topico .topicoUsuario,
+.conteudoPerfil .cTopicos .topico .topicoUsuario {
+	float: left;
+	margin: 6px;
+	padding: 4px;
+	font-size: 12px;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div,
+.topicosPesquisa .topico .topicoUsuario div,
+.conteudoPerfil .cTopicos .topico .topicoUsuario div {
+	height: 80px;
+	width: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-top: 10px;
+	border: 2px solid #001d38;
+	background-color: #001d38;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div img,
+.topicosPesquisa .topico .topicoUsuario img,
+.conteudoPerfil .cTopicos .topico .topicoUsuario div img { width: 80px;}
+
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo,
+.topicosPesquisa .topico .topicoConteudo,
+.conteudoPerfil .cTopicos .topico .topicoConteudo{ 
+	float: left;
+	width: 61%;
+	margin: 0 0 4px 2.6em;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo iframe,
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo video,
+.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo img,
+.topicosPesquisa .topico .topicoConteudo iframe,
+.topicosPesquisa .topico .topicoConteudo video,
+.topicosPesquisa .topico .topicoConteudo img,
+.conteudoPerfil .cTopicos .topico .topicoConteudo iframe,
+.conteudoPerfil .cTopicos .topico .topicoConteudo video,
+.conteudoPerfil .cTopicos .topico .topicoConteudo img { 
+	border-radius: 4px;
+	max-width: 530px;
+}
+
+.comunidadeColunaPrincipal .areaTopicos .topicoInteiro .topico ul,
+.topicosPesquisa .topico ul,
+.conteudoPerfil .cTopicos .topico ul {
+	float: right;
+	border-left: 1px solid #DCDCDC;
+	padding: 6px;
+	font-size: 11px;
+	min-height: 200px;
+	margin: 15px 10px 15px 0;
+}
+
+.topicoInteiro .linkUsuario {
+	background-color: transparent;
+	height: 120px;
+	width: 15%;
+	z-index: 10;
+	margin: 0 0 -150px 1px;
+	position: relative;
+	cursor: pointer;
+}
+
+.comunidadeBarraDireita{ 
+	float: right;
+	margin: 0 11% 0 0;
+}
+
+.comunidadeBarraDireita .descricaoComunidade,
+.comunidadeBarraDireita .comunidadeStatus,
+.comunidadeBarraDireita .comunidadeModeradores {
+	border: 1px solid #DCDCDC;
+	background-color: #fff;
+	border-radius: 4px;
+	min-height: 200px;
+	width: 250px;
+	font-size: 12px; 
+	text-align: center;
+	margin-bottom: 12px;
+	padding: 5px;
+}
+
+.comunidadeBarraDireita .descricaoComunidade .cabecalho,
+.comunidadeBarraDireita .comunidadeStatus .cabecalho {
+	background-color: #00376b;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 4px;
+}
+
+.comunidadeBarraDireita .descricaoComunidade .cabecalho h3,
+.comunidadeBarraDireita .comunidadeStatus .cabecalho h3 { color: #fff;}
+
+.comunidadeBarraDireita .comunidadeModeradores .cabecalho {
+	background-color: #00897B;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 4px;
+}
+
+.comunidadeBarraDireita .comunidadeModeradores .cabecalho h3 { color: #fff;}
+
+.comunidadeBarraDireita .descricaoComunidade p,
+.comunidadeBarraDireita .comunidadeStatus p,
+.comunidadeBarraDireita .comunidadeModeradores p { margin-top: 15px;}
+
+.comunidadeBarraDireita .comunidadeModeradores p { color: #00897B;}
+
+.topicoBarraDireita .topicoComunidadeDetalhes button,
+.comunidadeColunaPrincipal .comunidadeBarraDireita .descricaoComunidade #areaInscricao button,
+.comunidadeColunaPrincipal .comunidadeBarraDireita .descricaoComunidade .botaoCriarTopico {
+	height: 3em;
+	width: 10em;
+	margin: 6px 0;
+}
+
+.topicoBarraDireita .topicoComunidadeModeradores #comunidadeModerador,
+.comunidadeColunaPrincipal .comunidadeModeradores #comunidadeModerador { margin: 6px;}
+
+.topicoBarraDireita .topicoComunidadeModeradores #comunidadeModerador ul li a,
+.comunidadeColunaPrincipal .comunidadeModeradores #comunidadeModerador ul li a { 
+	color: #00897B;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.comunidadeTopo #trocarNomeComunidade {
+	position: absolute;
+	z-index: 85;
+	top: 145px;
+	right: 7px;;
+}
+
+.comunidadeTopo #trocarFotoComunidade {
+	position: absolute;
+	z-index: 85;
+	top: 86px;
+	left: 64px;
+}

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 650px){
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro .imagenIconeRegistro { margin: 30px 0 16px 23%;}
+
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 120px;
+		height: 100px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { margin-top: -17px;}
+
+	.indexColunaPrincipal .botaoExcluirComunidade { font-size: 10px;}
+
+	/*************************
+	*** CRIAR TOPICO
+	*************************/
+	#criarTopicoCaixa .LadoTopicoImagem { display: none;}
+
+	#criarTopicoCaixa form { width: 100%;}
+
+	#criarTopicoCaixa input[type="text"],
+	#criarTopicoCaixa textarea { 
+		width: 72%;
+		margin: 0 0 6px 12%;
+	}
+
+	#criarTopicoCaixa #adicionarMidia #tipRadio { margin: -10px 0 0 5%;}
+
+	#criarTopicoCaixa input[type="submit"] { margin: 3px 0 6px 23%;}
+
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .postArea .post .conteudoPost, 
+	.conteudoPerfil .cPosts .post .conteudoPost { width: 59%;}
+
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico #adicionarMidia { margin: 400px 0 0 0;}
+
+	.editarTopico #tipRadio { margin: 0 0 0 4px;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.cTopicos .topicoInteiro .topico { margin-left: -10px;}
+
+	.cTopicos .topicoInteiro .topico .topicoConteudo { margin-left: 5px;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 430px;}
+}

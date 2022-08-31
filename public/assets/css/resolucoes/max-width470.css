@@ -1,0 +1,165 @@
+@media only screen and (max-width: 470px) {
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro {
+		width: 80%;
+		margin: 0 0 0 10%;
+	}
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade { width: 62%;}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade .comunidadeIconeTopo { 
+		margin-left: 5%;
+		height: 80px;
+	}
+
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeTopo #trocarFotoComunidade {
+		top: 111px;
+		left: 26px;
+	}
+
+
+	.comunidadeTopo #imagemComunidade { 
+		height:80px;
+		width: 80px;
+		left: 20px;
+		top: 140px;
+	}
+	
+	.comunidadeTopo #imagemComunidade img { width: 80px;}
+	
+	.comunidadeTopo #nomeComunidade { 
+		left: 130px; 
+		font-size: 16px;
+		top: 175px;
+	}
+	
+	.comunidadeIndice { margin: 35px 0 0 10px;}
+	
+	.comunidadeColunaPrincipal { margin-left: 3%;}
+	
+	.comunidadeColunaPrincipal .areaTopicos { width: 330px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario,
+	.topicosPesquisa .topico .topicoUsuario {float: none;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div,
+	.topicosPesquisa .topico .topicoUsuario div { display: none;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo,
+	.topicosPesquisa .topico .topicoConteudo { margin-left: 60px;}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.topicoIndice { font-size: 12px;}
+	
+	.topicoBarraDireita { display: none;}
+	
+	.paginaTopico { width: 95%;}
+
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario {
+		margin: 6px 0 0 2px;
+		padding: 3px;
+	}
+	
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario div {
+		height: 40px;
+		width: 40px;
+	}
+		
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario div img { width: 40px;}
+	
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario p { font-size: 10px;}
+	
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario ul { display: none;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico {
+		margin-left: 90px;
+		font-size: 11px;
+	}
+		
+	.paginaTopico .postArea .post .postUsuario { margin-left: 1px;}
+	
+	.paginaTopico .postArea .post .postUsuario div,
+	.paginaTopico .postArea .post .postUsuario ul { display: none;}
+	
+	.paginaTopico .postArea .post .conteudoPost { margin-left: 80px;}
+	
+	.paginaTopico .postArea .post .postRodape .exibirComentariosPost { font-size: 10px;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 2px;}
+	
+	.barraTopoPerfil { width: 375px;}
+	
+	.conteudoPerfil{ width: 371px;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 350px;}
+
+	.conteudoPerfil .cPosts .post { margin-left: -8px;}
+
+	.conteudoPerfil .cPosts .post,
+	.conteudoPerfil .cPosts .post .dataPost { font-size: 11px;}
+
+	.conteudoPerfil .cPosts .post .postUsuario { display: none;}
+
+	.cMensagens #mensagemTextarea { width: 75%;}
+
+	.cMensagens #botaoEnviarMensagem { 
+		font-size: 10px;
+		width: 5em;
+	}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada { 
+		width: 67%;
+		margin: 2px 0 2px 3%;
+	}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada div,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada div { margin: 5px 5px 2px 15%;}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada h4,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada h4 { font-size: 11px;}
+
+	.conteudoPerfil .cPosts .post .conteudoPost { margin-left: 10px;}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button { margin: -12px 5% 0 0;}
+
+	.cRequerimento .requisicaoAmizadeEnviado .nome { font-size: 12px;}
+
+	.cRequerimento .requisicaoAmizadeEnviado {
+		width: 60%;
+		margin: 0 0 6px 6%;
+	}
+
+	.cRequerimento .requisicaoAmizade {
+		width: 60%;
+		margin: 0 0 6px 6%;
+	}
+
+	.cRequerimento .requisicaoAmizade .foto { display: none;}
+
+	.cRequerimento .requisicaoAmizade .nome { margin: 35px 0 0 12px;}
+
+	.cRequerimento #enviarRequerimentoAmizade,
+	.cRequerimento #enviarRequisicaoAmizade { margin-left: 24%;}
+}

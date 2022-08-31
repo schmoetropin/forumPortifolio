@@ -1,0 +1,186 @@
+@media only screen and (max-width: 890px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #barraPesquisaTopo { 
+		width: 400px;
+		margin-left: 6%;
+	}
+	
+	header #barraPesquisaTopo input[type=text]{ width: 89%;}
+
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro .imagenIconeRegistro { margin: 30px 0 16px 28%;}
+	
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4Topicos,
+	.top4TopicosIndex { height: 210px;}
+
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 160px;
+		height: 140px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade { min-height: 150px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade {
+		font-size: 11px;
+		margin-left: 3%;
+	}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 13px;}
+	
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade {
+		width: 190px;
+		height: 120px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade img{	width: 205px;}
+	
+	.indexColunaPrincipal .bordaComunidade .statusComunidade {
+		margin-right: 22px;
+		padding-left: 15px;
+		margin-top: 16px;
+		padding-top: 20px;
+		font-size: 10px;
+		border-left: 1px solid #DCDCDC;
+		height: 60px;
+	}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade .comunidadeIconeTopo { margin-left: 9%;}
+	
+	.areaCriacaoComunidade #caixaCriarCominidade form .previsualisacaoImgCom { margin-left: 11%;}
+	
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/	
+	.comunidadeColunaPrincipal .areaTopicos {
+		width: 530px;
+	}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico,
+	.topicosPesquisa .topico { min-height: 100px;}
+		
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario,
+	.topicosPesquisa .topico .topicoUsuario { 
+		padding: 0;
+		margin: 4px;
+		font-size: 10px;
+	}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div,
+	.topicosPesquisa .topico .topicoUsuario div {
+		height: 60px;
+		width: 60px;	
+	}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div img,
+	.topicosPesquisa .topico .topicoUsuario div img { width: 60px;}
+
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo,
+	.topicosPesquisa .topico .topicoConteudo { width: 46%;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo iframe,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo video,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo img,
+	.topicosPesquisa .topico .topicoConteudo iframe,
+	.topicosPesquisa .topico .topicoConteudo video,
+	.topicosPesquisa .topico .topicoConteudo img { 
+		max-width: 420px;
+		margin-left: -40px;
+	}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico ul,
+	.topicosPesquisa .topico ul { min-height: 100px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico ul li,
+	.topicosPesquisa .topico ul li { font-size: 10px;}
+	
+	.comunidadeBarraDireita .descricaoComunidade,
+	.comunidadeBarraDireita .comunidadeStatus,
+	.comunidadeBarraDireita .comunidadeModeradores {	width: 180px;}
+	
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico { min-height: 180px;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico { min-height: 180px;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { 
+		margin-left: -30px;
+		width: 350px;
+	}
+
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { height: 300px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto { margin-left: 8%;}
+	
+	.paginaTopico #postarComentario { width: 8.3em;}
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	
+	
+	/*************************
+	*** PERFIL
+	*************************/
+	.informacaoUsuarioEsquerda { 
+		width: 8%;
+		margin-left: 6px;
+	}
+
+	.informacaoUsuarioEsquerda .fotoPerfil {
+		width: 70px;
+		height: 70px;
+	}
+
+	.informacaoUsuarioEsquerda img { width: 70px;}
+
+	.informacaoUsuarioEsquerda .tipoUsuario { 
+		padding: 5px;
+		width: 85px;
+	}
+
+	.informacaoUsuarioEsquerda ul li {font-size: 9px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa h4 { line-height: 80px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa ul li { height: 85px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem,
+	.informacaoUsuarioEsquerda #modComunCaixa ul li #comunImagem img { width: 110px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa #sairModComun form input[type="submit"] { margin: -25px 0 0 30%;}
+
+	.barraTopoPerfil #AltRes { display: none;}
+
+	.barraTopoPerfil #baixRes { display: block;}
+
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 150px;}
+	
+	.barraTopoPerfil { width: 550px;}
+	
+	.conteudoPerfil{ width: 546px;}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div {
+		width: 160px;
+		margin-right: -1px;
+	}
+}

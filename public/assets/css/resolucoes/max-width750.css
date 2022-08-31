@@ -1,0 +1,151 @@
+@media only screen and (max-width: 750px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #botaoMenuUlBarraTopo { display: block;}
+	
+	header #altaResolucaoUlBarraTopo { display: none;}
+
+	/*************************
+	*** LOGIN
+	*************************/
+	#caixaLogin { margin-right: 7em;}
+
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro .imagenIconeRegistro { margin: 30px 0 16px 26%;}
+
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 140px;
+		height: 120px;
+	}
+	
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/		
+	.comunidadeColunaPrincipal .areaTopicos { width: 480px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div img,
+	.topicosPesquisa .topico .topicoUsuario div img { width: 60px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo iframe,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo video,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo img,
+	.topicosPesquisa .topico .topicoConteudo iframe,
+	.topicosPesquisa .topico .topicoConteudo video,
+	.topicosPesquisa .topico .topicoConteudo img { max-width: 370px;}
+	
+	.comunidadeBarraDireita .descricaoComunidade,
+	.comunidadeBarraDireita .comunidadeStatus,
+	.comunidadeBarraDireita .comunidadeModeradores { width: 160px;}	
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade h3 {
+		margin-top: 11%;
+		font-size: 12px;
+	}
+
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.topicoIndice { margin-top: -15px;}
+	
+	.paginaTopico .topicFirstPost { min-height: 160px;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico { min-height: 160px;}
+	
+	.paginaTopico #postForm textarea { 
+		width: 70%;
+		height: 2.5em;
+	}
+	
+	.paginaTopico #postarComentario { 
+		width: 7.6em;
+		height: 4em;
+	}
+	
+	.paginaTopico .postArea .post .comentarioPost textarea { 
+		height: 2.5em;
+		width: 68%;
+	}
+	
+	.paginaTopico .postArea .post .comentarioPost input[type=submit] { 
+		width: 10em;
+		font-size: 11px;
+	}
+
+	.paginaTopico .postArea .post .conteudoPost, 
+	.conteudoPerfil .cPosts .post .conteudoPost { width: 63%;}
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig,
+	.editarTopico .midiaNova .previsualizacaoMidia { 
+		width: 222px;		
+		height: 173px;
+	}
+
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig img,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig video,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig iframe,
+	.editarTopico .midiaNova .previsualizacaoMidia img,
+	.editarTopico .midiaNova .previsualizacaoMidia video,
+	.editarTopico .midiaNova .previsualizacaoMidia iframe { height: 173px;}
+
+	.editarTopico #adicionarMidia { margin: 202px 0 0 0;}
+
+	.editarTopico #tipRadio { margin: 0 0 0 14px;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.perfilColunaPrincipal{
+		width: 97%;
+		margin-left: 1%;
+	}
+
+	.informacaoUsuarioEsquerda { 
+		width: 8%;
+		margin-left: 2px;
+	}
+
+	.informacaoUsuarioEsquerda .fotoPerfil {
+		width: 50px;
+		height: 50px;
+	}
+
+	.informacaoUsuarioEsquerda img { width: 50px;}
+
+	.informacaoUsuarioEsquerda .tipoUsuario { 
+		padding: 2px;
+		width: 69px;
+		font-size: 9px;
+	}
+
+	.informacaoUsuarioEsquerda #modComunCaixa ul li { height: 75px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa h4 { line-height: 55px;}
+
+	.informacaoUsuarioEsquerda #modComunCaixa #sairModComun form input[type="submit"] { margin: -13px 0 0 65%;}
+
+	.informacaoUsuarioEsquerda .logoutPerfil button { width: 70px;}
+
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 100px;}
+	
+	.barraTopoPerfil { width: 550px;}
+	
+	.conteudoPerfil{ width: 546px;}
+}

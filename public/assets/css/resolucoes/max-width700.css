@@ -1,0 +1,149 @@
+@media only screen and (max-width: 700px) {
+	/*************************
+	*** HEADER
+	*************************/
+	header #barraPesquisaTopo { 
+		width: 320px;
+		margin-left: 2%;
+	}
+	
+	header #barraPesquisaTopo input[type=text]{ width: 85%;}
+	
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.indexColunaPrincipal {
+		width: 90%;
+		margin-left: 3%;
+	}
+	
+	.indexColunaPrincipal .bordaComunidade { min-height: 120px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade { font-size: 11px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 13px;}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade .comunidadeIconeTopo { margin-left: 16%;}
+
+	.areaCriacaoComunidade #caixaCriarCominidade #imagemLateralCriarComunidade { display: none;}
+
+	.areaCriacaoComunidade #caixaCriarCominidade form { width: 100%;}
+	
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/	
+	.comunidadeColunaPrincipal { 
+		margin-left: 0;
+		width: 100%;
+	}
+	.comunidadeColunaPrincipal .areaTopicos { width: 400px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoUsuario div img,
+	.topicosPesquisa .topico .topicoUsuario div img { width: 60px;}
+	
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo iframe,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo video,
+	.comunidadeColunaPrincipal .areaTopicos .topico .topicoConteudo img,
+	.topicosPesquisa .topico .topicoConteudo iframe,
+	.topicosPesquisa .topico .topicoConteudo video,
+	.topicosPesquisa .topico .topicoConteudo img { max-width: 250px;}
+
+	/*************************
+	*** EDITAR COMUNIDADE
+	*************************/
+	#editarComunidadeCaixa h4 {
+		margin-left: 2px;
+		font-size: 12px;
+	}
+		
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario { margin-right: 35px;}
+	
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario ul li{ font-size: 10px;}
+	
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario div {
+		height: 60px;
+		width: 60px;
+	}
+
+	.paginaTopico .topicoPaginaTopico .detalhesUsuario div img { width: 60px;}
+	
+	.paginaTopico .topicoPaginaTopico {
+		min-height: 100px;
+	}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico {
+		font-size: 14px;
+		min-height: 100px;
+		margin-left: 105px;
+	}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { width: 300px;}
+
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { height: 260px;}
+	
+	.topicoBarraDireita { margin-right: 10px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes h3,
+	.topicoBarraDireita .topicoComunidadeModeradores .cabecalho h3 { font-size: 14px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto {
+		height: 80px;
+		width: 110px;
+	}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto img { width: 110px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #inscreverComunidadeTopico button {
+		width: 7em;
+		height: 2em;
+		margin-bottom: 3px;
+	}
+		
+	.paginaTopico .postArea .post .conteudoPost,
+	.paginaTopico .postArea .post .postUsuario p { font-size: 11px;}
+	
+	.paginaTopico .postArea .post .dataPost,
+	.paginaTopico .postArea .post .replyUserInfo ul li { font-size: 10px;}
+	
+	.paginaTopico .postArea .post .postUsuario div {
+		height: 40px;
+		width: 40px;
+	}
+	
+	.paginaTopico .postArea .post .postUsuario div img { width: 40px;}
+
+	.paginaTopico .postArea .post .comentarioPost textarea { 
+		width: 62%;
+		height: 2.5em;
+	}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.perfilColunaPrincipal{
+		width: 97%;
+		margin-left: 1%;
+	}
+
+	.informacaoUsuarioEsquerda { 
+		display: none;
+	}
+
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 20px;}
+
+	.cRequerimento #enviarRequerimentoAmizade,
+	.cRequerimento #enviarRequisicaoAmizade { margin-left: 34%;}
+}

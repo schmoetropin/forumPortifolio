@@ -1,0 +1,256 @@
+/*************************
+*** TOPICO POSTS
+*************************/
+.topicoIndice {
+	text-transform: capitalize;
+	width: 90%;
+	margin: -30px 0 0 3%;	
+	font-weight: bold;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 0 4px;
+	background-color: #fff;
+}
+
+.topicoIndice a:hover { color: #1A237E;}
+
+.paginaTopico {
+	width: 72%;
+	margin: 10px 0 0 3%;
+	min-height: 650px;
+	float: left;
+}
+
+.paginaTopico .tituloTopico {
+	text-align: center;
+	text-transform: capitalize;
+	color: #1A237E;
+	margin: 20px 0;
+}
+
+.paginaTopico .topicoPaginaTopico {
+	background-color: #fff;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+.paginaTopico .topicoPaginaTopico:hover { border-color: #999;}
+
+.paginaTopico .topicoPaginaTopico:hover .topicoCabecalho{ background-color: #001d38;}
+
+.paginaTopico .topicoPaginaTopico .topicoCabecalho {
+	height: 10px;
+	background-color: #00376b;
+	padding: 4px 10px;
+}
+
+.paginaTopico .topicoPaginaTopico .topicoCabecalho p {
+	float: right;
+	font-size: 11px;
+	color: #fff; 
+}
+
+.paginaTopico .topicoPaginaTopico .detalhesUsuario {
+	text-transform: capitalize;
+	float: left;
+	margin: 10px 25px 0 10px;
+	border-right: 1px solid #DCDCDC;
+	padding-right: 8px;
+	font-size: 12px;
+}
+
+.paginaTopico .topicoPaginaTopico .detalhesUsuario p { 
+	font-weight: bold; 
+	text-align: center;
+}
+
+.paginaTopico .topicoPaginaTopico .detalhesUsuario div {
+	height: 110px;
+	width: 110px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 6px;
+}
+
+.paginaTopico .topicoPaginaTopico .detalhesUsuario div img { width: 110px;}
+
+.paginaTopico .topicoPaginaTopico .conteudoTopico {
+	padding: 10px;
+	margin-left: 160px;
+	min-height: 360px;
+}
+
+.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+.paginaTopico .topicoPaginaTopico .conteudoTopico video{ width: 700px;}
+
+.paginaTopico .topicoPaginaTopico .topicoRodape {
+	width: 80%;
+	border-top: 1px solid #DCDCDC;
+	bottom: 0;
+	padding: 4px;
+	font-size: 11px;
+	height: 15px;
+	min-height: 20px;
+	margin: 2px 0 0 10%;
+}
+
+.paginaTopico #postConteudo {
+	width: 85%;
+	height: 3em;
+	border: 1px solid #DCDCDC;
+	margin-top: 6px;
+	padding: 5px;
+}
+
+.paginaTopico #postarComentario {
+	height: 4.3em;
+	width: 9.5em;
+	float: right;
+	margin: 6px 0;
+}
+
+.paginaTopico .postArea .post,
+.conteudoPerfil .cPosts .post{
+	min-height: 150px;
+	border: 2px solid #bbb;
+	border-radius: 7px;
+	margin-top: 4px;
+	padding: 6px;
+	width: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.paginaTopico .postArea .post .postUsuario,
+.conteudoPerfil .cPosts .post .postUsuario { 
+	float: left;
+	margin-left: 6px;
+}
+
+.paginaTopico .postArea .post .postUsuario p,
+.conteudoPerfil .cPosts .post .postUsuario p {
+	font-weight: bold;
+	margin-bottom: 6px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.paginaTopico .postArea .post .postUsuario div,
+.conteudoPerfil .cPosts .post .postUsuario div {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 0 6px 10px;
+}
+
+.paginaTopico .postArea .post .postUsuario div img,
+.conteudoPerfil .cPosts .post .postUsuario div img { width: 60px;}
+
+.paginaTopico .postArea .post .postUsuario ul li,
+.conteudoPerfil .cPosts .post .postUsuario ul li { font-size: 11px;}
+
+.paginaTopico .postArea .post .dataPost,
+.conteudoPerfil .cPosts .post .dataPost {
+	float: right;
+	font-size: 12px;
+	height: 55px;
+}
+
+.paginaTopico .postArea .post .conteudoPost,
+.conteudoPerfil .cPosts .post .conteudoPost {
+	padding: 4px;
+	margin: 12px 0 0 150px;
+	width: 68%;
+	min-height: 86px;
+}
+
+.paginaTopico .postArea .post .postRodape
+.conteudoPerfil .cPosts .post .postRodape {
+	font-size: 11px;
+	float: right;
+	min-height: 20px;
+}
+
+.paginaTopico .postArea .post .postRodape .exibirComentariosPost { 
+	margin-left: 40px;
+	font-size: 12px;
+	float: left;
+}
+
+.paginaTopico .postArea .post .comentarioPost {
+	width: 99%;
+	margin: 40px 0 0 .1%;
+	display: none;
+}
+
+.paginaTopico .postArea .post .comentarioPost textarea {
+	width: 80%;
+	height: 3em;
+	float: left;
+	margin: 3px 8px 4px 0;
+}
+
+.paginaTopico .postArea .post .comentarioPost .btnVerde { height: 4em;}
+
+.topicoBarraDireita {
+	width: 22%;
+	float: right;
+	margin: 5.8em 20px 0 0;
+	text-align: center;
+}
+
+.topicoBarraDireita .topicoComunidadeModeradores,
+.topicoBarraDireita .topicoComunidadeDetalhes {
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	background-color: #fff;
+	overflow: hidden;
+	min-height: 150px;
+	margin-bottom: 10px;
+}
+
+.topicoBarraDireita .topicoComunidadeDetalhes h3 {
+	width: 100%;
+	text-align: center;
+	background-color: #00376b;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto {
+	height: 120px;
+	width: 160px;
+	margin: 0 0 10px 22%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto img { 
+	width: 180px;
+	margin-left: -10px;
+}
+
+.topicoBarraDireita .topicoComunidadeDetalhes p {
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+
+.topicoBarraDireita .topicoComunidadeModeradores .cabecalho { background-color: #00695C;}
+
+.topicoBarraDireita .topicoComunidadeModeradores .cabecalho h3 { color: #fff;}
+
+.postArea .post .postRodape .delEditPost {
+	position: absolute;
+	top: 26px;
+	right: 5px;
+	height: 55px;
+	width: 110px;
+	text-align: center;
+}
+.postArea .post .postRodape .delEditPost .editPostBotao{ margin-bottom: 5px;}
+
+.postArea .post .postRodape .editPost { display: none;}

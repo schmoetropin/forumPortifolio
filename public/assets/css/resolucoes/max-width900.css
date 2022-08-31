@@ -1,0 +1,48 @@
+@media only screen and (max-width: 890px) {
+	/*************************
+	*** INDEX COMUNIDADES
+	*************************/
+	.top4TopCompleto { margin: 0 0 5px 3px;}
+
+	.top4Topicos .top4top .conteudo,
+	.top4TopicosIndex .top4top .conteudo {
+		width: 180px;
+		height: 160px;
+	}
+
+	/*************************
+	*** EDITAR TOPICO
+	*************************/
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig,
+	.editarTopico .midiaNova .previsualizacaoMidia { 
+		width: 250px;		
+		height: 210px;
+	}
+
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig img,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig video,
+	.editarTopico .midiaOriginal .visualizacaoMidiaOrig iframe,
+	.editarTopico .midiaNova .previsualizacaoMidia img,
+	.editarTopico .midiaNova .previsualizacaoMidia video,
+	.editarTopico .midiaNova .previsualizacaoMidia iframe { height: 210px;}
+
+	.editarTopico #adicionarMidia { margin: 250px 0 0 0;}
+
+	.editarTopico #tipRadio { margin: 0 0 0 20px;}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.informacaoUsuarioEsquerda .logoutPerfil button {
+		width: 90px;
+		padding: 2px;
+	}
+
+	.cTopicos .topicoInteiro .topico .topicoUsuario { display: none;}
+	
+	.cTopicos .topicoInteiro .topico .topicoUsuario div { display: none;}
+
+	.cTopicos .topicoInteiro .topico .topicoConteudo { margin-left: 20px;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 430px;}
+}

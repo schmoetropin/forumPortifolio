@@ -1,0 +1,162 @@
+@media only screen and (max-width: 562px) {
+	/*************************
+	*** HEADER 
+	*************************/
+	header #barraPesquisaTopo { 
+		width: 250px;
+		margin-left: 1%;
+	}
+	
+	header #barraPesquisaTopo input[type=text]{ width: 83%;}
+
+	/*************************
+	*** REGISTRO
+	*************************/
+	#caixaRegistro {
+		width: 70%;
+		margin: 0 0 0 15%;
+	}
+
+	#caixaRegistro .imagenIconeRegistro { margin: 30px 0 16px 19%;}
+		
+	/****************************
+	*** INDEX COMUNIDADES
+	****************************/
+	.top4Topicos,
+	.top4TopicosIndex {
+		height: 149px;
+		overflow: hidden;
+	}
+
+	.indexColunaPrincipal { width: 100%;}
+	
+	.indexColunaPrincipal .bordaComunidade { min-height: 120px;}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade {
+		font-size: 10px;
+		margin-left: 2%;
+	}
+	
+	.indexColunaPrincipal .bordaComunidade .conteudoComunidade h3 { font-size: 12px;}
+	
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade {
+		width: 110px;
+		height: 80px;
+	}
+
+	.indexColunaPrincipal .bordaComunidade .fotoComunidade img { width: 125px;}
+	
+	.indexColunaPrincipal .bordaComunidade .statusComunidade {
+		margin-right: 17px;
+		padding-left: 10px;
+		margin-top: 10px;
+		padding-top: 12px;
+		font-size: 10px;
+		border-left: 1px solid #DCDCDC;
+		height: 60px;
+	}
+
+	/*************************
+	*** CRIAR COMUNIDADE
+	*************************/
+	.areaCriacaoComunidade #caixaCriarCominidade {
+		width: 70%;
+		margin: 0 0 0 15%;
+	}
+
+	/*************************
+	*** COMUNIDADE TOPICOS
+	*************************/
+	.comunidadeTopo .inscreverCriarTopicoResBaixa{ display: block;}
+
+	.comunidadeBarraDireita .descricaoComunidade { display: none;}
+
+	/*************************
+	*** EDITAR COMUNIDADE
+	*************************/
+	#editarComunidadeCaixa{
+		width: 70%;
+		left: 15%;
+	}
+
+	#editarComunidadeCaixa #editarIcone { margin-left: 2px;}
+
+	#editarComunidadeCaixa h4 {
+		margin-left: 1px;
+		font-size: 10px;
+	}
+
+	#editarComunidadeCaixa #editarFotoCaixa,
+	#editarComunidadeCaixa #editarNomeCaixa,
+	#editarComunidadeCaixa #editarDescricaoCaixa { margin-left: 10px;}
+
+	/*************************
+	*** TOPICO POSTS
+	*************************/
+	.topicoIndice { font-size: 12px;}
+	
+	.topicoBarraDireita .topicoComunidadeDetalhes #topicoComunidadeFoto { margin-left: 3%;}
+	
+	.paginaTopico .topicoPaginaTopico .conteudoTopico img,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico video,
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { width: 200px;}
+
+	.paginaTopico .topicoPaginaTopico .conteudoTopico iframe { height: 150px;}
+	
+	.paginaTopico .postArea .post .postUsuario { margin-left: 1px;}
+	
+	.paginaTopico .postArea .post .postUsuario div,
+	.paginaTopico .postArea .post .postUsuario ul { display: none;}
+	
+	.paginaTopico .postArea .post .conteudoPost { margin-left: 80px;}
+	
+	.paginaTopico .postArea .post .postRodape .exibirComentariosPost { font-size: 11px;}
+	
+	.paginaTopico #postForm textarea { 
+		width: 67%;
+		height: 2.5em;
+	}
+	
+	.paginaTopico #postarComentario { 
+		width: 7em;
+		height: 4em;
+		font-size: 12px;
+	}
+
+	/*************************
+	*** PERFIL
+	*************************/
+	.barraTopoPerfil #baixRes button { 
+		margin: 6px;
+	}
+
+	.barraTopoPerfil,
+	.conteudoPerfil { left: 5px;}
+	
+	.barraTopoPerfil { width: 460px;}
+	
+	.conteudoPerfil{ width: 456px;}
+
+	.conteudoPerfil .cSobre .divConteMarg,  
+	.conteudoPerfil .cPosts .divConteMarg,
+	.conteudoPerfil .cTopicos .divConteMarg,
+	.conteudoPerfil .cMensagens .divConteMarg,
+	.conteudoPerfil .cRequerimento .divConteMarg { margin: 170px 5px;} 
+
+	.cTopicos .topicoInteiro .topico { margin-left: -8px;}
+
+	.conteudoPerfil .cTopicos .topicoInteiro .topico .topicoConteudo img { width: 380px;}
+
+	.cRequerimento #reqModEnviadaArea .modReqEnviada button,
+	.cRequerimento #reqModUsuarioEnviadaArea .modReqEnviada button { margin: -12px 9% 0 0;}
+
+	.cRequerimento .requisicaoAmizadeEnviado .foto { margin: 5px 0 0 5%;}
+
+	.cRequerimento .requisicaoAmizadeEnviado button { 
+		font-size: 10px;
+		margin: 3px 14% 0 0;
+	}
+
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div { width: 120px;}
+	.cRequerimento #reqModRecebidaArea .modReqRecebida .recComunidade div img { width: 130px;}
+}
