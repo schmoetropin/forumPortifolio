@@ -76,3 +76,24 @@ create table subscriptions(
     constraint us_insc_fk foreign key(user) references users(id) on delete cascade on update cascade,
     constraint com_insc_fk foreign key(community) references communities(id) on delete cascade on update cascade
 );
+
+create table chat(
+    id int not null auto_increment primary key,
+    unique_name varchar(200) unique not null,
+    constraint us_un_fk foreign key(unique_name) references users(unique_name) on delete cascade on update cascade
+);
+
+create table posts(
+    id int not null auto_increment primary key,
+    content text not null,
+    created_at datetime not null,
+    updated_at datetime not null,
+    likes int not null default 0,
+    responses int not null default 0,
+    created_by int,
+    in_topic int not null,
+    in_community int not null,
+    constraint crat_by_fk foreign key(created_by) references users(id) on delete set null on update cascade,
+    constraint it_by_fk foreign key(in_topic) references topics(id) on delete cascade on update cascade,
+    constraint ic_by_fk foreign key(in_community) references communities(id) on delete cascade on update cascade
+);

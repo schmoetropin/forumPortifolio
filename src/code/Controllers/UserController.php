@@ -39,6 +39,17 @@ class UserController extends Controller
      */
 
     /**
+     * @param int $id
+     * @return int
+     */
+    public function getId(string $uniqueN): int
+    {
+        return $this->usModel->select(['id'])
+            ->where(['unique_name' => $uniqueN])
+            ->getDbData()[0]['id'];
+    }
+
+    /**
      * @param $id
      * @return string
      */
@@ -95,6 +106,17 @@ class UserController extends Controller
 
     /**
      * @param int $id
+     * @return int
+     */
+    public function getNumberPosts(int $id): int
+    {
+        return $this->usModel->select(['number_posts'])
+            ->where(['id' => $id])
+            ->getDbData()[0]['number_posts'];
+    }
+
+    /**
+     * @param int $id
      * @return string
      */
     public function getEmail(int $id): string
@@ -139,6 +161,18 @@ class UserController extends Controller
     public function setNumberTopics(int $id, int $value): void
     {
         $this->usModel->update(['number_topics' => $value])
+            ->where(['id' => $id])
+            ->executeQuery();
+    }
+
+    /**
+     * @param int $id
+     * @param int $value
+     * @return void
+     */
+    public function setNumberPosts(int $id, int $value): void
+    {
+        $this->usModel->update(['number_posts' => $value])
             ->where(['id' => $id])
             ->executeQuery();
     }

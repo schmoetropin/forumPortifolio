@@ -4,8 +4,8 @@
         <p>Criado: <?= $top['created_at'];?></p>
     </div>
     <div class='detalhesUsuario'>
-        <a href='<?= REQ_URI.'/users/'.getUserUniqueName($top['created_by']);?>'><?=
-            getUserName($top['created_by']);?>
+        <a href='<?= REQ_URI.'/users/'.getUserUniqueName($top['created_by']);?>'>
+            <p><?= getUserName($top['created_by']);?></p>
             <div><img src='<?= getUserProfilePic($top['created_by']);?>'></div>
         </a>
     </div>

@@ -10,8 +10,10 @@
 		<div class="paginaTopicoPrincipal"><?php
             if (session(LOG_U)) : ?>
                 <button class='btn btnLaranja' id='editarTopico'>editarTopico</button><?php
-            endif;
-			require_once(TOPIC_PATH.'mainTopic.php'); ?>
+            endif;?>
+            <div id="exibirTopicoPricipal"><?php
+			    require_once(TOPIC_PATH.'mainTopic.php'); ?>
+            </div>
 		</div><?php 
 		if(session(LOG_U)) : ?>
 	<!-- FORMULARIO POST -->	
@@ -26,7 +28,7 @@
 		<input type="hidden" id="noTopico" value="<?= $top['unique_name'];?>">
 	<!-- POSTS -->
 		<div class="postArea"><?php
-			//$ePObj->exibirPosts($_GET['t']);?>
+			require_once(TOPIC_PATH.'displayPosts.php');?>
 		</div>
 	</div>
 	<div class="mensagemErroDiv" id="mensagemErroPostDiv">
@@ -83,9 +85,6 @@
                             <input type="radio" name="topArqRadio" id="topicoArquivoRadio" class="uploadArquivoForm" value="upload">Upload imagem/video&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
                         <div id="tipRadio">
-                            <input type="radio" name="topArqRadio" id="topicoArquivoRadio" class="linkImagemForm" value="linkImagem">Link imagem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </div>
-                        <div id="tipRadio">
                             <input type="radio" name="topArqRadio" id="topicoArquivoRadio" class="linkVideoForm" value="linkVideo">Link youtube&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
                         <div id="tipRadio">
@@ -103,7 +102,9 @@
                 <form method="post" id="editarConteudoTopico">
                     <input type="hidden" id="topPagId" name="topPagId" value="<?= $top['unique_name'];?>">
                     <small>Conteudo do topico precisa ser maior que 2 caracteres</small>
-                    <textarea name="editarConteudo" id="editarConteudo" placeholder="Editar conteudo"></textarea>
+                    <textarea name="editarConteudo" id="editarConteudo" placeholder="Editar conteudo"><?=
+                        $top['content'];?>
+                    </textarea>
                     <div class="contadorEditarTopicoConteudo"></div>
                     <input type="submit" id="editarConteudoTopicoBotao" class="btn btnVermelho btnEditarTopico" value="editar conteudo">
                 </form>
@@ -118,5 +119,6 @@
 </div>
 <div>
     <script src="<?= JS;?>TopicEdit.js"></script>
+    <script src="<?= JS;?>Post.js"></script>
     <script src="<?= JS;?>Like.js"></script>
 </div>

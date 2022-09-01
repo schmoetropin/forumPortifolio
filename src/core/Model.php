@@ -12,6 +12,13 @@ abstract class Model extends Connection
      */
     private const UNIQUE_NAME = 'unique_name';
     private const PREG = '/[^a-zA-Z0-9]/';
+    private const EQUALS = 'equals';
+    private const LIKE = 'like';
+
+    /**
+     * @var string|null
+     */
+    private ?string $type;
 
     /**
      * @var string
@@ -110,6 +117,24 @@ abstract class Model extends Connection
         } else {
             $this->data = array_merge($this->data, $data);
         }
+        $this->type = self::EQUALS;
+        $params = $this->columnsAndParams($data);
+        $this->query .= ' WHERE '.$params;
+        return $this;
+    }
+
+    /**
+     * @param array $data
+     * @return self
+     */
+    public function whereLike(array $data): self
+    {
+        if (empty($this->data)) {
+            $this->data = $data;
+        } else {
+            $this->data = array_merge($this->data, $data);
+        }
+        $this->type = self::LIKE;
         $params = $this->columnsAndParams($data);
         $this->query .= ' WHERE '.$params;
         return $this;
@@ -150,7 +175,11 @@ abstract class Model extends Connection
         $i = 1;
         $count = count($data);
         foreach ($data as $key => $value) {
-            $params .= $key.'=:'.$key;
+            if ($this->type === self::EQUALS) {
+                $params .= $key.'=:'.$key;
+            } else {
+                $params .= $key.' LIKE :'.$key;
+            }
             if ($i < $count) {
                 $params .= ' AND ';
             }
@@ -196,7 +225,11 @@ abstract class Model extends Connection
         $prepare = $this->con()->prepare($this->query);
         if (!empty($this->data)) {
             foreach ($this->data as $key => $value) {
-                $prepare->bindValue(':'.$key, $value);
+                if ($this->type === self::EQUALS) {
+                    $prepare->bindValue(':'.$key, $value);
+                } else {
+                    $prepare->bindValue(':'.$key, '%'.$value.'%');
+                }
             }
         }
         $prepare->execute();
@@ -206,6 +239,7 @@ abstract class Model extends Connection
             $dbData[$i] = $fetch;
             $i++;
         }
+        $this->type = null;
         $this->data = [];
         return $dbData;
     }

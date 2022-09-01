@@ -5,18 +5,19 @@ namespace Src\Code\Models;
 
 use Src\Core\Model;
 
-class ModeratorModel extends Model
+class PostModel extends Model
 {
     /**
      * @var string
      */
-    private string $tableName = 'moderators';
+    private string $tableName = 'posts';
 
     /**
      * @var array
      */
     private array $fillableColumns = [
-        'moderator', 'community'
+        'content', 'created_at', 'updated_at', 
+        'created_by', 'in_topic', 'in_community'
     ];
 
     /**

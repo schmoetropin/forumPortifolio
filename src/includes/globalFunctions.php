@@ -38,6 +38,12 @@ function getUserUniqueName(int $id): string
     return $usCon->getUniqueName($id);
 }
 
+function getUserId(string $uniqueName): int
+{
+    $usCon = new UserController();
+    return $usCon->getId($uniqueName);
+}
+
 /**
  * @param int $id
  * @return string
@@ -69,6 +75,10 @@ function checkUserSubscription(int $user, int $community): bool
     return $subCon->checkUserSubscription($user, $community);
 }
 
+/**
+ * @param int $id
+ * @return string
+ */
 function getCommunityUniqueName(int $id): string
 {
     $comCon = new CommunityController();

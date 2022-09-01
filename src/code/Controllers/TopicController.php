@@ -6,6 +6,7 @@ namespace Src\Code\Controllers;
 use Src\Core\Controller;
 use Src\Core\Request;
 use Src\Code\Models\TopicModel;
+use Src\Code\Models\PostModel;
 
 class TopicController extends Controller
 {
@@ -14,10 +15,16 @@ class TopicController extends Controller
      */
     private TopicModel $topModel;
 
+    /**
+     * @var PostModel
+     */
+    private PostModel $poModel;
+
     public function __construct()
     {
         parent::__construct();
         $this->topModel = new TopicModel();
+        $this->poModel = new PostModel();
     }
 
     /**
@@ -30,8 +37,44 @@ class TopicController extends Controller
         $array = explode('/', $data);
         $top = $this->topModel->select(['*'])
             ->where(['unique_name' => $array[1]])
+            ->getDbData();
+
+        $topId = $this->getId($array[1]);
+        $pos = $this->poModel->select(['*'])
+            ->where(['in_topic' => $topId])
+            ->getDbData();
+        return $this->view('topic', [
+            'top' => $top[0],
+            'pos' => $pos
+        ]);
+    }
+
+    /**
+     * @param $req
+     * @return void
+     */
+    public function displayTopic(Request $req): void
+    {
+        $data = $req->validateInput();
+        $topId = $this->getId($data['topic']);
+        $top = $this->topModel->select(['*'])
+            ->where(['id' => $topId])
             ->getDbData()[0];
-        return $this->view('topic', ['top' => $top]);
+        require_once(TOPIC_PATH.'mainTopic.php');
+    }
+
+    /**
+     * @param $req
+     * @return void
+     */
+    public function displayPosts(Request $req): void
+    {
+        $data = $req->validateInput();
+        $topId = $this->getId($data['topic']);
+        $pos = $this->poModel->select(['*'])
+            ->where(['in_topic' => $topId])
+            ->getDbData();
+        require_once(TOPIC_PATH.'displayPosts.php');
     }
 
     /**
@@ -47,7 +90,7 @@ class TopicController extends Controller
 
     /**
      * @param int $id
-     * @return string
+     * @return string|null
      */
     public function getFile(int $id): ?string
     {
@@ -56,6 +99,10 @@ class TopicController extends Controller
             ->getDbData()[0]['file'];
     }
 
+    /**
+     * @param int $id
+     * @return int
+     */
     public function getInCommunity(int $id): int
     {
         return $this->topModel->select(['in_community'])
@@ -68,5 +115,19 @@ class TopicController extends Controller
         return $this->topModel->select(['created_by'])
             ->where(['id' => $id])
             ->getDbData()[0]['created_by'];
+    }
+
+    public function getPosts(int $id): int
+    {
+        return $this->topModel->select(['posts'])
+            ->where(['id' => $id])
+            ->getDbData()[0]['posts'];
+    }
+
+    public function setPosts(int $id, int $value): void
+    {
+        $this->topModel->update(['posts' => $value])
+            ->where(['id' => $id])
+            ->executeQuery();
     }
 }

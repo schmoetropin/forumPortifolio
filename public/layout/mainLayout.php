@@ -42,7 +42,7 @@
             <!-- BARRA DE PESQUISA -->
             <div id="barraPesquisaTopo">
                 <img src="<?= IMG;?>x-mark.png" id="limparBarraPesquisa">
-                <form method="post" action="pesquisa.php">
+                <form id="pesquisarComunidade" method="post" action="<?= REQ_URI.'/search';?>">
                     <input type="text" placeholder="Pesquisar comunidade..." id="barraDePerquisa" name="resultado" required>
                     <button type="submit"><img src="<?= IMG;?>search.png"></button>
                 </form>

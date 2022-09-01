@@ -40,7 +40,7 @@ if ($count > 0) :
                 </div>
             </a><?php
             if (session(LOG_U)) :
-                if(checkIfUserModeratesCommunity(session(LOG_U), $comId) || session(LOG_U) === $tops['createdBy']) : ?>
+                if(checkIfUserModeratesCommunity(session(LOG_U), $comId) || session(LOG_U) === $tops[$i]['created_by']) : ?>
                     <p id='deletarTopicoComunidade'></p>
                     <div style='position: absolute; z-index: 80; margin: -65px 0 0 3px;'>
                         <input type='submit' class='btn btnVermelho' id='deletarTopico<?= $tops[$i]['unique_name'];?>' value='excluir topico'>

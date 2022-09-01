@@ -29,6 +29,9 @@ class MainPageController extends Controller
         return $this->view('main', ['coms' => $data]);
     }
 
+    /**
+     * @return void
+     */
     public function displayCommunities(): void
     {
         $data = $this->comModel->select(['*'])

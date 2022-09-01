@@ -5,13 +5,13 @@ namespace Src\Code\Requests;
 
 use Src\Core\FormValidation;
 
-class CommunityEditNameRequest extends FormValidation
+class TopicEditNameRequest extends FormValidation
 {
     /**
      * @var string
      */
-    public string $inputEditarNome = '';
-    public string $comunidade = '';
+    public string $topPagId = '';
+    public string $editarTitulo = '';
 
     /**
      * @return array
@@ -19,7 +19,8 @@ class CommunityEditNameRequest extends FormValidation
     protected function validation(): array
     {
         return [
-            'inputEditarNome' => ['required', 'min:4', 'max:20']
+            'topPagId' => ['exists:unique_name-topics'],
+            'editarTitulo' => ['required', 'min:4', 'max:60']
         ];
     }
 
@@ -29,7 +30,8 @@ class CommunityEditNameRequest extends FormValidation
     protected function fieldName(): array
     {
         return [
-            'inputEditarNome' => 'Nome da comunidade'
+            'topPagId' => 'Tópico não existe',
+            'editarTitulo' => 'Titulo do tópico'
         ];
     }
 }

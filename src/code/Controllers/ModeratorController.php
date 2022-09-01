@@ -60,6 +60,10 @@ class ModeratorController extends Controller
         return false;
     }
 
+    /**
+     * @param int $moderator
+     * @return int
+     */
     public function quantityOfCommunitiesUserModerates(int $moderator): int
     {
         return $this->modModel->select(['*'])

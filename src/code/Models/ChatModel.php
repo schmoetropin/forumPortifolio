@@ -5,18 +5,18 @@ namespace Src\Code\Models;
 
 use Src\Core\Model;
 
-class ModeratorModel extends Model
+class ChatModel extends Model
 {
     /**
      * @var string
      */
-    private string $tableName = 'moderators';
+    private string $tableName = 'chat';
 
     /**
      * @var array
      */
     private array $fillableColumns = [
-        'moderator', 'community'
+        'unique_name'
     ];
 
     /**

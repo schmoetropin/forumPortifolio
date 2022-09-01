@@ -51,6 +51,10 @@ class CommunityController extends Controller
         ]);
     }
 
+    /**
+     * @param Request $req
+     * @return void
+     */
     public function displayTopics(Request $req): void
     {
         $data = $req->validateInput();
@@ -146,10 +150,28 @@ class CommunityController extends Controller
      * @param int $id
      * @return int
      */
+    public function getPosts(int $id): int
+    {
+        return $this->comModel->select(['posts'])
+            ->where(['id' => $id])
+            ->getDbData()[0]['posts'];
+    }
+
+    /**
+     * @param int $id
+     * @return int
+     */
     public function getUniqueName(int $id): string
     {
         return $this->comModel->select(['unique_name'])
             ->where(['id' => $id])
             ->getDbData()[0]['unique_name'];
+    }
+
+    public function setPosts(int $id, int $value): void
+    {
+        $this->comModel->update(['posts' => $value])
+            ->where(['id' => $id])
+            ->executeQuery();
     }
 }

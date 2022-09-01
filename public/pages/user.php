@@ -73,7 +73,8 @@
                             <div class='editarPerfilCaixa'>
                                 <div class="tFotoPerfil">
                                     <p>Tocar foto:</p>
-                                    <form method="post" id="trocarFotoPerfilForm" enctype="multipart/form-data">				
+                                    <form method="post" id="trocarFotoPerfilForm" enctype="multipart/form-data">
+                                        <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                         <input type="file" id="trocarFotoPerfil" name="trocarFotoPerfil" required>
                                         <input type="submit" id="trocarFotoPerfilBotao" class="btn btnAzul" name="trocarFotoPerfilBotao" value="trocar foto">
                                     </form>
@@ -81,6 +82,7 @@
                                 <div class="tNome">
                                     <p>Trocar nome:</p>
                                     <form method="post" id="trocarNomeForm">
+                                        <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                         <input type="text" id="trocarNome" name="trocarNome" placeholder="Nome" required>
                                         <input type="submit" id="trocarNomeBotao" class="btn btnAzul" value="trocar nome">
                                     </form>
@@ -88,6 +90,7 @@
                                 <div class="tEmail">
                                     <p>Trocar email:</p>
                                     <form method="post" id="trocarEmailForm">
+                                        <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                         <input type="email" id="trocarEmail" name="trocarEmail" placeholder="Email" required>
                                         <input type="email" id="trocarEmail2" name="trocarEmail2" placeholder="Confirmar Email" required>
                                         <input type="submit" id="trocarEmailBotao" class="btn btnAzul" value="trocar Email">
@@ -96,23 +99,15 @@
                                 <div class="tSenha">
                                     <p>Trocar senha:</p>
                                     <form method="post" id="trocarSenhaForm">
+                                        <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                         <input type="password" id="trocarSenha" name="trocarSenha" placeholder="Senha" required>
                                         <input type="password" id="trocarSenha2" name="trocarSenha2" placeholder="Confirmar senha" required>
                                         <input type="submit" id="trocarSenhaBotao" class="btn btnAzul" value="trocar senha">
                                     </form>
                                 </div>
-                                <div class="tDescricao">
-                                    <p>Descricao:</p>
-                                    <form method="post" id="trocarDescricaoForm">
-                                        <textarea id="trocarDescricao" name="trocarDescricao" rows="10"></textarea><br>
-                                        <input type="submit" id="trocarDescricaoBotao" class="btn btnAzul" value="postar descricao">
-                                    </form>
-                                </div>
                             </div><?php	
                         else : ?>
                             <!-- LOGGED NA PAGINA DE OUTRO USUARIO -->
-                            Descricao:
-                            <div class="exibirUsuarioDescricao"></div>
                             Inscricoes: 
                             <div class="usuarioInscricoes">
                                 <?php // echo $usObj->exibirComunidadesInscritas($get);?>
@@ -124,6 +119,7 @@
                                     <div class="tFotoPerfil">
                                         <p>Trocar foto:</p>
                                         <form method="post" id="trocarFotoPerfilForm" enctype="multipart/form-data">				
+                                            <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                             <input type="file" id="trocarFotoPerfil" name="trocarFotoPerfil" required>
                                             <input type="submit" id="trocarFotoPerfilBotao" class="btn btnAzul" name="trocarFotoPerfilBotao" value="trocar foto">
                                         </form>
@@ -131,15 +127,10 @@
                                     <div class="tNome">
                                         <p>Trocar nome:</p>
                                         <form method="post" id="trocarNomeForm">
+                                            <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
+                                            <input type="hidden" name="usuario" value="<?= $us['unique_name'];?>" />
                                             <input type="text" id="trocarNome" name="trocarNome" placeholder="Nome" required>
                                             <input type="submit" id="trocarNomeBotao" class="btn btnAzul" value="trocar nome">
-                                        </form>
-                                    </div>
-                                    <div class="tDescricao">
-                                        <p>Descricao:</p>
-                                        <form method="post" id="trocarDescricaoForm">
-                                            <textarea id="trocarDescricao" name="trocarDescricao" rows="10"></textarea><br>
-                                            <input type="submit" id="trocarDescricaoBotao" class="btn btnAzul" value="postar descricao">
                                         </form>
                                     </div>
                                 </div><?php	
@@ -147,8 +138,6 @@
                         endif;
                     else : ?>
                         <!-- LOGGED OFF -->
-                        Descricao:
-                        <div class="exibirUsuarioDescricao"></div>
                         Inscricoes: 
                         <div class="usuarioInscricoes">
                             <?php // echo $usObj->exibirComunidadesInscritas($get);?>
@@ -201,7 +190,7 @@
 				else : ?>
 					<div class="cMensagens">
 						<div style="margin-top: 20px; padding: 0 8px 0 8px;" class="divConteMarg">
-							<a href="" class="btn btnAzul abrirChatBotao">
+							<a href="<?= REQ_URI.'/chat/'.$us['unique_name'];?>" class="btn btnAzul abrirChatBotao">
 								abrir chat
 							</a>
 						</div>
@@ -237,7 +226,8 @@
                         //$checUs = $UsNullObj->tipoUsuario($logU);?>
                         <input type="hidden" id="logUsuario" value="<?php echo $_SESSION['logUsuario'];?>" />
                         <input type="hidden" id="paginaUsuario" value="<?php echo $_GET['us'];?>" /><?php
-                        if ($checUs > 1) { ?>
+                        // if moderator
+                        if (false) { ?>
                             <div id="modRequerimentoFormArea"><?php
                                 $mFObj->requisicaoModerador($_SESSION['logUsuario'], $_GET['us']);?>
                             </div>
@@ -249,6 +239,7 @@
                         <div id="requerimentoAmigoAbaArea"><?php
                             if (session(LOG_U)) :  
                                 if (session(LOG_U) !== $us['id']) :
+                                    /*
                                     $checar = $amigObj->checarListaDeAmigos($logU, $get);
                                     if($checar)
                                         $amigObj->removerAmigoForm($_GET['us']);    
@@ -259,6 +250,7 @@
                                         else
                                             $amigObj->formularioRequerimentoAmizade($_SESSION['logUsuario'], $_GET['us']);
                                     }
+                                    */
                                 endif;
                             endif; ?>
                         </div><?php
@@ -276,3 +268,7 @@
 		<button id="fecharPerfilMes" class="btn btnVermelho">ok</button>
 	</div>
 	<div class="fundoOpacoMensagemErro" id="fundoOpacoMensagemPerfilErro"></div>
+    <div>
+        <script src="<?= JS;?>UserTabs.js"></script>
+        <script src="<?= JS;?>UserEdit.js"></script>
+    </div>

@@ -5,13 +5,13 @@ namespace Src\Code\Requests;
 
 use Src\Core\FormValidation;
 
-class CommunityEditNameRequest extends FormValidation
+class UserEditPictureRequest extends FormValidation
 {
     /**
      * @var string
      */
-    public string $inputEditarNome = '';
-    public string $comunidade = '';
+    public string $usuario = '';
+    public array $trocarFotoPerfil = [];
 
     /**
      * @return array
@@ -19,7 +19,8 @@ class CommunityEditNameRequest extends FormValidation
     protected function validation(): array
     {
         return [
-            'inputEditarNome' => ['required', 'min:4', 'max:20']
+            'usuario' => ['exists:unique_name-users'],
+            'trocarFotoPerfil' => ['required_file', 'size:500000', 'extension:jpg|jpeg|png']
         ];
     }
 
@@ -29,7 +30,8 @@ class CommunityEditNameRequest extends FormValidation
     protected function fieldName(): array
     {
         return [
-            'inputEditarNome' => 'Nome da comunidade'
+            'usuario' => 'Usuario',
+            'trocarFotoPerfil' => 'Foto de perfil'
         ];
     }
 }

@@ -73,7 +73,13 @@ require_once(CONTROLLERS_PATH.'ModeratorController.php');
 require_once(CONTROLLERS_PATH.'CommunityEditController.php');
 require_once(CONTROLLERS_PATH.'TopicController.php');
 require_once(CONTROLLERS_PATH.'TopicCreateDelete.php');
+require_once(CONTROLLERS_PATH.'TopicEditController.php');
 require_once(CONTROLLERS_PATH.'SubscriptionController.php');
+require_once(CONTROLLERS_PATH.'ChatController.php');
+require_once(CONTROLLERS_PATH.'UserEditController.php');
+require_once(CONTROLLERS_PATH.'PostController.php');
+
+require_once(CONTROLLERS_PATH.'SearchController.php');
 
 // Models require
 require_once(MODELS_PATH.'UserModel.php');
@@ -81,6 +87,8 @@ require_once(MODELS_PATH.'CommunityModel.php');
 require_once(MODELS_PATH.'ModeratorModel.php');
 require_once(MODELS_PATH.'TopicModel.php');
 require_once(MODELS_PATH.'SubscriptionModel.php');
+require_once(MODELS_PATH.'ChatModel.php');
+require_once(MODELS_PATH.'PostModel.php');
 
 // Requests require
 require_once(REQUESTS_PATH.'RegisterRequest.php');
@@ -90,8 +98,16 @@ require_once(REQUESTS_PATH.'CommunityEditPictureRequest.php');
 require_once(REQUESTS_PATH.'CommunityEditNameRequest.php');
 require_once(REQUESTS_PATH.'CommunityEditDescriptionRequest.php');
 require_once(REQUESTS_PATH.'TopicCreateRequest.php');
+require_once(REQUESTS_PATH.'TopicEditContentRequest.php');
+require_once(REQUESTS_PATH.'TopicEditMediaRequest.php');
+require_once(REQUESTS_PATH.'TopicEditNameRequest.php');
 require_once(REQUESTS_PATH.'SubscriptionRequest.php');
 require_once(REQUESTS_PATH.'TopicDeleteRequest.php');
+require_once(REQUESTS_PATH.'UserEditEmailRequest.php');
+require_once(REQUESTS_PATH.'UserEditNameRequest.php');
+require_once(REQUESTS_PATH.'UserEditPasswordRequest.php');
+require_once(REQUESTS_PATH.'UserEditPictureRequest.php');
+require_once(REQUESTS_PATH.'PostCreateRequest.php');
 
 // Global functions
 require_once('globalFunctions.php');

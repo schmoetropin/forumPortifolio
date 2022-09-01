@@ -7,6 +7,7 @@ use Src\Core\Controller;
 use Src\Core\Request;
 use Src\Code\Requests\RegisterRequest;
 use Src\Code\Models\UserModel;
+use Src\Code\Models\ChatModel;
 
 class RegisterLoginController extends Controller
 {
@@ -14,6 +15,11 @@ class RegisterLoginController extends Controller
      * @var UserModel
      */
     private UserModel $regModel;
+
+    /**
+     * @var ChatModel
+     */
+    private ChatModel $chModel;
 
     /**
      * @var RegisterRequest
@@ -24,6 +30,7 @@ class RegisterLoginController extends Controller
     {
         parent::__construct();
         $this->regModel = new UserModel();
+        $this->chModel = new ChatModel();
         $this->regReq = new RegisterRequest();
     }
     
@@ -46,6 +53,7 @@ class RegisterLoginController extends Controller
                 'password' => $data['regSenha'], 
                 'created_at' => $date 
             ]);
+            $this->chModel->insert(['unique_name' => $uniqueName]);
             echo 'Novo usuário registrado';
         } else {
             print_r($this->regReq->getErrors());
