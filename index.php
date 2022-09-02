@@ -20,7 +20,7 @@ use Src\Code\Controllers\SubscriptionController;
 use Src\Code\Controllers\ChatController;
 use Src\Code\Controllers\UserEditController;
 use Src\Code\Controllers\PostController;
-
+use Src\Code\Controllers\LikeController;
 use Src\Code\Controllers\SearchController;
 $app = new Application();   
 
@@ -66,11 +66,15 @@ $app::$app->route->post('/displayPost', [new TopicController, 'displayPosts']);
 // Post
 $app::$app->route->post('/createPost', [new PostController, 'create']);
 
+// Like
+$app::$app->route->post('/likeTopic', [new LikeController, 'likeUnlikeTopic']);
+
 // Chat page and messages
 $app::$app->route->get('/chat/'.UNIQUE_PAGE_NAME, [new ChatController, 'index']);
 
 // Search page
 $app::$app->route->post('/search', [new SearchController, 'index']);
+$app::$app->route->get('/search', [new SearchController, 'index']);
 
 // Display pages
 $app::$app->resolve();

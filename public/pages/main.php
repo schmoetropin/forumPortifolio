@@ -35,7 +35,7 @@ endif; ?>
 <!-- TOP 4 TOPICOS MAIS POPULARES DO FORUM -->
 <small style="margin: 0 0 0 3%;">Topicos mais populares:</small>
 <div class="top4TopicosIndex"><?php
-	//$exbTop->exibirto4Topicos(); ?>
+	require_once(MULTIPAGES_PATH.'top4Topics.php'); ?>
 </div>
 <!-- COMUNIDADES -->
 <small style="margin: 0 0 0 3%;">Comunidades:</small>

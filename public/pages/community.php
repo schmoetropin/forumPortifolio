@@ -37,8 +37,8 @@
 <div class="comunidadeColunaPrincipal">
     <small style="margin: 0 0 0 3%;">Topicos mais populares:</small>
     <div class="top4Topicos"><?php
-        //$exbTop4->exibirto4Topicos($comId);
-    ?></div>
+        require_once(MULTIPAGES_PATH.'top4Topics.php'); ?>
+	</div>
     <small style="left: 3%; position: absolute;">Topicos:</small>
     <div class="areaTopicos"><?php
         require_once(COMMUNITY_PATH.'displayTopics.php');?>

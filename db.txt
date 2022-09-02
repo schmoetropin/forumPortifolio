@@ -97,3 +97,13 @@ create table posts(
     constraint it_by_fk foreign key(in_topic) references topics(id) on delete cascade on update cascade,
     constraint ic_by_fk foreign key(in_community) references communities(id) on delete cascade on update cascade
 );
+
+create table likes(
+    id int not null auto_increment primary key,
+    liked_by int,
+    in_topic int,
+    in_post int,
+    constraint li_by_fk foreign key(liked_by) references users(id) on delete cascade on update cascade,
+    constraint in_to_fk foreign key(in_topic) references topics(id) on delete cascade on update cascade,
+    constraint in_po_fk foreign key(in_post) references posts(id) on delete cascade on update cascade
+);

@@ -26,6 +26,12 @@ class SearchController extends Controller
         $coms = $this->comModel->select(['*'])
             ->whereLike(['name' => $data['resultado']])
             ->getDbData();
+        if (isset($data['resultado'])) {
+            return $this->view('search', [
+                'search' => $data['resultado'],
+                'coms' => $coms
+            ]);
+        }
         return $this->view('search', ['coms' => $coms]);
     }
     

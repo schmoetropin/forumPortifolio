@@ -124,9 +124,23 @@ class TopicController extends Controller
             ->getDbData()[0]['posts'];
     }
 
+    public function getLikes(int $id): int
+    {
+        return $this->topModel->select(['likes'])
+            ->where(['id' => $id])
+            ->getDbData()[0]['likes'];
+    }
+
     public function setPosts(int $id, int $value): void
     {
         $this->topModel->update(['posts' => $value])
+            ->where(['id' => $id])
+            ->executeQuery();
+    }
+
+    public function setLikes(int $id, int $value): void
+    {
+        $this->topModel->update(['likes' => $value])
             ->where(['id' => $id])
             ->executeQuery();
     }

@@ -1,10 +1,13 @@
-<h1>Search</h1>
 <?php
 $count = count($coms);
-if ($count > 0) : 
-    for ($i = 0; $i < $count; $i++) : ?>
-        <small>achou</small><?php
-    endfor;
+if ($count > 0) : ?>
+    <small style="margin: 0 0 0 5%;">Resultados para a pesquisa "<?= $search??null;?>":</small>
+    <div class="indexColunaPrincipal"><?php
+        require_once(MAIN_PATH.'communitiesDisplay.php'); ?>
+    </div><?php
 else : ?>
-    <small>Nenhuma comunidade foi encontrada</small><?php
+    <small style="margin: 0 0 0 5%;">Resultados para a pesquisa "<?= $search??null;?>":</small>
+    <div class="indexColunaPrincipal">
+        <small>Nenhuma comunidade foi encontrada</small>
+    </div><?php
 endif;

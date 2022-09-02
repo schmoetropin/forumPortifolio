@@ -141,10 +141,11 @@
 				<div id="enviarEmailIcone" style="cursor: pointer; float: right; margin-left: 3px;">
 					<img src="<?= IMG;?>email-24.png" alt="email" />
 				</div>
+            </div>
+            <div>
                 <input type="hidden" id="UPLOAD" value="<?= UPLOAD;?>" />
                 <input type="hidden" id="STRING_TO_ARRAY_SEPARATOR" value="<?= STRING_TO_ARRAY_SEPARATOR;?>" />
-			</div>
-            <div>
+                <input type="hidden" id="IMG" value="<?= IMG;?>" />
                 <script src="<?= JS?>LoginRegister.js"></script>
             </div>
 		</footer>

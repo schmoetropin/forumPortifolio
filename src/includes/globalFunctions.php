@@ -6,6 +6,7 @@ use Src\Code\Controllers\ModeratorController;
 use Src\Code\Controllers\UserController;
 use Src\Code\Controllers\SubscriptionController;
 use Src\Code\Controllers\CommunityController;
+use Src\Code\Controllers\LikeController;
 
 /**
  * @param string $key
@@ -101,4 +102,10 @@ function getCommunityDescription(int $id): string
 {
     $comCon = new CommunityController();
     return $comCon->getDescription($id);
+}
+
+function checkIfTopicIsLiked(int $userId, int $topicId): bool
+{
+    $likCon = new LikeController();
+    return $likCon->checkIfTopicIsLiked($userId, $topicId);
 }

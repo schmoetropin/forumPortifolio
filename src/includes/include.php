@@ -22,6 +22,7 @@ define('PAGES_REQUIRE_PATH', CODE_PATH.'PagesRequire'.DIRECTORY_SEPARATOR);
 define('MAIN_PATH', PAGES_REQUIRE_PATH.'main'.DIRECTORY_SEPARATOR);
 define('COMMUNITY_PATH', PAGES_REQUIRE_PATH.'community'.DIRECTORY_SEPARATOR);
 define('TOPIC_PATH', PAGES_REQUIRE_PATH.'topic'.DIRECTORY_SEPARATOR);
+define('MULTIPAGES_PATH', PAGES_REQUIRE_PATH.'multiPages'.DIRECTORY_SEPARATOR);
 
 // Public path and subfolders
 define('PUBLIC_PATH', ROOT.'public'.DIRECTORY_SEPARATOR);
@@ -78,7 +79,7 @@ require_once(CONTROLLERS_PATH.'SubscriptionController.php');
 require_once(CONTROLLERS_PATH.'ChatController.php');
 require_once(CONTROLLERS_PATH.'UserEditController.php');
 require_once(CONTROLLERS_PATH.'PostController.php');
-
+require_once(CONTROLLERS_PATH.'LikeController.php');
 require_once(CONTROLLERS_PATH.'SearchController.php');
 
 // Models require
@@ -89,6 +90,7 @@ require_once(MODELS_PATH.'TopicModel.php');
 require_once(MODELS_PATH.'SubscriptionModel.php');
 require_once(MODELS_PATH.'ChatModel.php');
 require_once(MODELS_PATH.'PostModel.php');
+require_once(MODELS_PATH.'LikeModel.php');
 
 // Requests require
 require_once(REQUESTS_PATH.'RegisterRequest.php');
@@ -108,6 +110,7 @@ require_once(REQUESTS_PATH.'UserEditNameRequest.php');
 require_once(REQUESTS_PATH.'UserEditPasswordRequest.php');
 require_once(REQUESTS_PATH.'UserEditPictureRequest.php');
 require_once(REQUESTS_PATH.'PostCreateRequest.php');
+require_once(REQUESTS_PATH.'LikeTopicRequest.php');
 
 // Global functions
 require_once('globalFunctions.php');

@@ -40,6 +40,13 @@ class CommunityController extends Controller
         $community = $this->comModel->getDbData();
 
         $comId = $this->getId($array[1]);
+
+        $top4Top = $this->topModel->select(['*'])
+            ->where(['in_community' => $comId])
+            ->order('likes', 'desc')
+            ->limit(4)
+            ->getDbData();
+
         $topics = $this->topModel->select(['*'])
                     ->where(['in_community' => $comId])
                     ->order('updated_at', 'desc')
@@ -47,6 +54,7 @@ class CommunityController extends Controller
 
         return $this->view('community', [
             'com' => $community[0],
+            'top4' => $top4Top,
             'tops' => $topics
         ]);
     }

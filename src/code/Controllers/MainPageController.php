@@ -4,10 +4,13 @@ declare(strict_types=1);
 namespace Src\Code\Controllers;
 
 use Src\Core\Controller;
+use Src\Code\Models\TopicModel;
 use Src\Code\Models\CommunityModel;
 
 class MainPageController extends Controller
 {
+    private TopicModel $topModel;
+
     /**
      * @var CommunityModel
      */
@@ -16,6 +19,7 @@ class MainPageController extends Controller
     public function __construct()
     {
         parent::__construct();
+        $this->topModel = new TopicModel();
         $this->comModel = new CommunityModel();
     }
     /**
@@ -23,10 +27,19 @@ class MainPageController extends Controller
      */
     public function index(): string
     {
+        $top4Top = $this->topModel->select(['*'])
+            ->order('likes', 'desc')
+            ->limit(4)
+            ->getDbData();
+        
         $data = $this->comModel->select(['*'])
             ->order('id', 'desc')
             ->getDbData();
-        return $this->view('main', ['coms' => $data]);
+        
+        return $this->view('main', [
+            'top4' => $top4Top,
+            'coms' => $data
+        ]);
     }
 
     /**

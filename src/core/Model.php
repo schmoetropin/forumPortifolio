@@ -92,6 +92,7 @@ abstract class Model extends Connection
     public function update(array $data): self
     {
         $this->data = $data;
+        $this->type = self::EQUALS;
         $params = $this->columnsAndParams($data);
         $this->query = 'UPDATE '.$this->tableName().' SET '.$params;
         return $this;
@@ -148,6 +149,15 @@ abstract class Model extends Connection
     public function order(string $column, string $order): self
     {
         $this->query .= ' ORDER BY '.$column.' '.$order;
+        return $this;
+    }
+
+    public function limit(int $val1, int $val2 = null): self
+    {
+        $this->query .= ' LIMIT '.$val1;
+        if (!is_null($val2)) {
+            $this->query .= ', '.$val2;
+        }
         return $this;
     }
 
@@ -239,7 +249,6 @@ abstract class Model extends Connection
             $dbData[$i] = $fetch;
             $i++;
         }
-        $this->type = null;
         $this->data = [];
         return $dbData;
     }
