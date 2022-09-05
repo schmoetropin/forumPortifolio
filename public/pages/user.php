@@ -16,7 +16,23 @@
 				<input type='hidden' id='tipoUsuarioH' value="<?= $us['user_type'];?>" />
 			</div>
 			<div id='tipoUsuarioArea'><?php
-				//echo $usObj->exibirTipoUsuarioPerfil($paginaUsuario, $tipoUsuario);?>
+				if ($us['user_type'] === 1) : ?>
+                    <p class='tipoUsuario btn btnAzul'>Usuario</p><?php
+                elseif ($us['user_type'] === 2) : ?>
+                    <button class='tipoUsuario btn btnVerde' id='modComunBot'>Moderador</button>
+                    <div id='modComunCaixa'>
+                        <h3>Moderador</h3>
+                        <img src='assets/imagens/icones/close.png' id='fecharModComunCaixa'>
+                        <div id='modComunCaixaComunidades'><?php
+                            /*
+                            $id = $this->nomeU->selecionarId($usuario, 'usuario');
+                            $this->mFObj->exibirComunidadesModerador($id);*/
+                            ?>
+                        </div>
+                    </div><?php
+                else : ?>
+                    <p class='tipoUsuario btn btnVermelho'>Admin</p><?php
+                endif; ?>
 			</div>
 			<ul>
                 <li>Email: 
@@ -113,7 +129,7 @@
                                 <?php // echo $usObj->exibirComunidadesInscritas($get);?>
                             </div><?php
                             //admin
-                            if (false) : ?>
+                            if ($us['user_type'] === 3) : ?>
                                 <button id="botaoEditarPerfilCaixa" class="btn btnAzul">editar perfil</button>
                                 <div class='editarPerfilCaixa'>
                                     <div class="tFotoPerfil">

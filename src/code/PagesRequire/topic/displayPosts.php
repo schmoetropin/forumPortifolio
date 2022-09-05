@@ -15,21 +15,19 @@ if ($count > 0) :
             <div class='postRodape'>
                 <div class='LikeArea' id='postLikeArea<?= $pos[$i]['id'];?>'><?php
                     if (session(LOG_U)): ?>
-                        <form id='likeTopic' method='post' style='float: left;'>
-                            <input type='hidden' id='likeTopico' name='likeTopico' value=''><?php
-                        if (true) : ?>
-                            <input type='hidden' id='opcaoLikeUnlike' name='opcaoLikeUnlike' value='unlike'>
-                            <button type='submit' id='like' class='btnInvisivel likeAreaBotao' name='unlikeAreaBotao'><img src='<?= IMG;?>blue-like.png'></button><?php
+                        <form id='likePostForm<?= $pos[$i]['id'];?>' method='post' style='float: left;'>
+                            <input type='hidden' id='likePost' name='likePost' value='<?= $pos[$i]['id'];?>'><?php
+                        if (checkIfPostIsLiked(session(LOG_U), $pos[$i]['id'])) : ?>
+                            <button type='submit' id='likePostButton<?= $pos[$i]['id'];?>' class='btnInvisivel likeAreaBotao' name='likeAreaBotao'><img src='<?= IMG;?>gray-like.png'></button><?php
                         else : ?>
-                            <input type='hidden' id='opcaoLikeUnlike' name='opcaoLikeUnlike' value='like'>
-                            <button type='submit' id='like' class='btnInvisivel likeAreaBotao' name='likeAreaBotao'><img src='<?= IMG;?>gray-like.png'></button><?php
+                            <button type='submit' id='likePostButton<?= $pos[$i]['id'];?>' class='btnInvisivel likeAreaBotao' name='unlikeAreaBotao'><img src='<?= IMG;?>blue-like.png'></button><?php
                         endif; ?>
-                        </form> likes: <?php echo $pos[$i]['likes'];
+                        </form> likes: <?php
                     else : ?>
                         <button id='likeAreaBotao' class='btnInvisivel likeAreaBotao'>
                             <img src='<?= IMG;?>gray-like.png'>
-                        </button> likes: <?php echo $pos[$i]['likes'];
-                    endif ; ?> 
+                        </button> likes: <?php
+                    endif ; ?> <span id="numLikesPost<?= $pos[$i]['id'];?>"><?= $pos[$i]['likes'];?></span>
                 </div><?php
                 if (session(LOG_U)) : 
                     if (
@@ -42,13 +40,10 @@ if ($count > 0) :
                         </div>
                         <div class='delPost' id='delPost<?= $pos[$i]['id'];?>'>
                             <img src='<?= IMG;?>close.png' class='botaoFecharPadrao' id='fecharDelPost<?= $pos[$i]['id'];?>' class="botaoFecharPadrao">
-                            <small>Valor: <?php// echo $uniq;?><br>
-                            Tem certeza que deseja deletar o post, se sim digite o valor gerado acima abaixo</small>
+                            <small>Tem certeza que deseja deletar o post?</small>
                             <form id='deletarPostForm<?= $pos[$i]['id'];?>' method='post'>
                                 <input type='hidden' name='delPostId' value='<?= $pos[$i]['id'];?>'>
-                                <input type='hidden' name='delPostValor' value='<?php// echo $uniq;?>'>
-                                <input type='text' name='delPostInput' placeholder='Digite o valor aqui' required>
-                                <input type='submit' name='delPostBotao' id='delPostFormBotao<?= $pos[$i]['id'];?>' value='deletar post' class='btn btnVermelho'>
+                                <input type='submit' name='delPostBotao' id='delPostFormBotao<?= $pos[$i]['id'];?>' value='sim' class='btn btnVermelho'>
                             </form>
                         </div>
                         <div class='editPost' id='editPost<?= $pos[$i]['id'];?>'>

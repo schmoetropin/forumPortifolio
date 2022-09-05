@@ -111,6 +111,7 @@ require_once(REQUESTS_PATH.'UserEditPasswordRequest.php');
 require_once(REQUESTS_PATH.'UserEditPictureRequest.php');
 require_once(REQUESTS_PATH.'PostCreateRequest.php');
 require_once(REQUESTS_PATH.'LikeTopicRequest.php');
+require_once(REQUESTS_PATH.'LikePostRequest.php');
 
 // Global functions
 require_once('globalFunctions.php');

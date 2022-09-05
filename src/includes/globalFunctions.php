@@ -109,3 +109,9 @@ function checkIfTopicIsLiked(int $userId, int $topicId): bool
     $likCon = new LikeController();
     return $likCon->checkIfTopicIsLiked($userId, $topicId);
 }
+
+function checkIfPostIsLiked(int $userId, int $postId): bool
+{
+    $likCon = new LikeController();
+    return $likCon->checkIfPostIsLiked($userId, $postId);
+}

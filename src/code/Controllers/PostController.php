@@ -76,4 +76,18 @@ class PostController extends Controller
             print_r($this->poCrReq->getErrors());
         }
     }
+
+    public function getLikes(int $postId): int
+    {
+        return $this->poModel->select(['likes'])
+            ->where(['id' => $postId])
+            ->getDbData()[0]['likes'];
+    }
+
+    public function setLikes(int $postId, int $value): void
+    {
+        $this->poModel->update(['likes' => $value])
+            ->where(['id' => $postId])
+            ->executeQuery();
+    }
 }

@@ -37,6 +37,26 @@ class Post {
             _id('fundoOpacoMensagemPost').style.display = 'none';
         }
     }
+
+    displayEditPost = (type, id) => {
+        if (type === 'display') {
+            _id('editPost'+id).style.display = 'block';
+            _id('fundoOpacoMensagemPost').style.display = 'block';
+        } else {
+            _id('editPost'+id).style.display = 'none';
+            _id('fundoOpacoMensagemPost').style.display = 'none';
+        }
+    }
+
+    displayDeletePost = (type, id) => {
+        if (type === 'display') {
+            _id('delPost'+id).style.display = 'block';
+            _id('fundoOpacoMensagemPost').style.display = 'block';
+        } else {
+            _id('delPost'+id).style.display = 'none';
+            _id('fundoOpacoMensagemPost').style.display = 'none';
+        }
+    }
 }
 let pos = new Post();
 
@@ -47,5 +67,26 @@ if (_id('postarComentario')) {
 
     _id('fecharPostMes').addEventListener('click', (e) => {
         pos.displayPostMessage('close');
+    });
+}
+
+if (_cl('.delEditPost')) {
+    _all('.postId').forEach((values) => {
+        let val = values.value;
+        _id('editPostBotao'+val).addEventListener('click', () => {
+            pos.displayEditPost('display', val);
+        });
+
+        _id('fecharEditPost'+val).addEventListener('click', () => {
+            pos.displayEditPost('close', val);
+        });
+
+        _id('delPostBotao'+val).addEventListener('click', () => {
+            pos.displayDeletePost('display', val);
+        });
+
+        _id('fecharDelPost'+val).addEventListener('click', () => {
+            pos.displayDeletePost('close', val);
+        });
     });
 }

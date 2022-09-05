@@ -68,6 +68,7 @@ $app::$app->route->post('/createPost', [new PostController, 'create']);
 
 // Like
 $app::$app->route->post('/likeTopic', [new LikeController, 'likeUnlikeTopic']);
+$app::$app->route->post('/likePost', [new LikeController, 'likeUnlikePost']);
 
 // Chat page and messages
 $app::$app->route->get('/chat/'.UNIQUE_PAGE_NAME, [new ChatController, 'index']);
