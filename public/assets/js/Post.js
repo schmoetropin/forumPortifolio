@@ -15,6 +15,22 @@ class Post {
         xhr.send(formData);
     }
 
+    editPost = (e, id) => {
+        e.preventDefault();
+        let form = _id('editarPostForm'+id);
+        let formData = new FormData(form);
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = () => {
+            if(xhr.status === 200 && xhr.readyState === 4) {
+                this.displayPostMessage('display');
+                _id('mensagemPostDiv').innerHTML = xhr.responseText;
+                this.displayPosts();
+            }
+        }
+        xhr.open('post', REQ_URI+'/editPost');
+        xhr.send(formData);
+    }
+
     displayPosts = () => {
         let formData = new FormData();
         formData.append('topic', _id('noTopico').value);
@@ -73,6 +89,10 @@ if (_id('postarComentario')) {
 if (_cl('.delEditPost')) {
     _all('.postId').forEach((values) => {
         let val = values.value;
+        _id('editPostFormBotao'+val).addEventListener('click', (e) => {
+            pos.editPost(e, val);
+        });
+
         _id('editPostBotao'+val).addEventListener('click', () => {
             pos.displayEditPost('display', val);
         });

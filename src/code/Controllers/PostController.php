@@ -7,6 +7,7 @@ use Src\Core\Controller;
 use Src\Core\Request;
 use Src\Code\Models\PostModel;
 use Src\Code\Requests\PostCreateRequest;
+use Src\Code\Requests\PostEditRequest;
 
 class PostController extends Controller
 {
@@ -26,6 +27,11 @@ class PostController extends Controller
     private PostCreateRequest $poCrReq;
 
     /**
+     * @var PostEditRequest
+     */
+    private PostEditRequest $poEdReq;
+
+    /**
      * @var TopicController
      */
     private TopicController $topCon;
@@ -35,6 +41,11 @@ class PostController extends Controller
      */
     private CommunityController $comCon;
 
+    /**
+     * @var ModeratorController
+     */
+    private ModeratorController $modCon;
+
     public function __construct()
     {
         parent::__construct();
@@ -43,6 +54,8 @@ class PostController extends Controller
         $this->poCrReq = new PostCreateRequest();
         $this->topCon = new TopicController();
         $this->comCon = new CommunityController();
+        $this->poEdReq = new PostEditRequest();
+        $this->modCon = new ModeratorController();
     }
 
     public function create(Request $req): void
@@ -77,11 +90,46 @@ class PostController extends Controller
         }
     }
 
+    public function editPost(Request $req): void
+    {
+        $data = $req->validateInput();
+        if ($this->poEdReq->validateForm($data)) {
+            $postId = (int)$data['editPostId'];
+            $comId = $this->getInCommunity($postId);
+            $createdBy = $this->getCreatedBy($postId);
+            if (
+                $this->modCon->checkUserModeratesCommunity(session(LOG_U), $comId) ||
+                session(LOG_U) === $createdBy
+            ) {
+                $this->poModel->update(['content' => $data['editarPostTextarea']])
+                    ->where(['id' => $postId])
+                    ->executeQuery();
+                echo 'Post Editado';
+            }
+        } else {
+            print_r($this->poEdReq->getErrors());
+        }
+    }
+
     public function getLikes(int $postId): int
     {
         return $this->poModel->select(['likes'])
             ->where(['id' => $postId])
             ->getDbData()[0]['likes'];
+    }
+
+    public function getCreatedBy(int $postId): int
+    {
+        return $this->poModel->select(['created_by'])
+            ->where(['id' => $postId])
+            ->getDbData()[0]['created_by'];
+    }
+
+    public function getInCommunity(int $postId): int
+    {
+        return $this->poModel->select(['in_community'])
+            ->where(['id' => $postId])
+            ->getDbData()[0]['in_community'];
     }
 
     public function setLikes(int $postId, int $value): void

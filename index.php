@@ -65,6 +65,7 @@ $app::$app->route->post('/displayPost', [new TopicController, 'displayPosts']);
 
 // Post
 $app::$app->route->post('/createPost', [new PostController, 'create']);
+$app::$app->route->post('/editPost', [new PostController, 'editPost']);
 
 // Like
 $app::$app->route->post('/likeTopic', [new LikeController, 'likeUnlikeTopic']);
